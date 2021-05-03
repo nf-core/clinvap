@@ -1,0 +1,782 @@
+tumor_type	source_name	disease_name	doid	icd10	do_name	abbr	ICD_lower	concat	system	organ	histology_0	histology_1	histology_2
+COREAD	IntoGen	Colorectal adenocarcinoma	50861		colorectal adenocarcinoma	COADREAD		 coadread coread intogen colorectal adenocarcinoma colorectal adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+COREAD	IntoGen	Colorectal adenocarcinoma	50861		colorectal adenocarcinoma	COREAD		 coread coread intogen colorectal adenocarcinoma colorectal adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+BRCA	IntoGen	Breast carcinoma	3459		breast carcinoma	BRCA		 brca brca intogen breast carcinoma breast carcinoma	reproductive	breast	carcinoma		
+LGG	IntoGen	Lower grade glioma	60108		brain glioma	LGG		 lgg lgg intogen lower grade glioma brain glioma	nervous	cns	glioma		
+ovarian	COSMIC	ovarian	NA					 ovarian cosmic ovarian 	reproductive	ovary			
+breast	COSMIC	breast	NA			BREAST		 breast breast cosmic breast 	reproductive	breast			
+pancreatic	COSMIC	pancreatic	NA					 pancreatic cosmic pancreatic 	digestive	pancreas			
+GBM	IntoGen	Glioblastoma multiforme	3068		glioblastoma multiforme	GBM		 gbm gbm intogen glioblastoma multiforme glioblastoma multiforme	nervous	cns	blastoma	glio	multiforme
+BLCA	IntoGen	Bladder carcinoma	4007		bladder carcinoma	BLCA		 blca blca intogen bladder carcinoma bladder carcinoma	genitourinary	bladder	carcinoma		
+OV	IntoGen	Serous ovarian adenocarcinoma	NA			OV		 ov ov intogen serous ovarian adenocarcinoma 	reproductive	ovary	carcinoma	adeno	serous
+UCEC	IntoGen	Uterine corpus endometrioid carcinoma	NA			UCEC		 ucec ucec intogen uterine corpus endometrioid carcinoma 	reproductive	uterus	carcinoma		
+serous ovarian	COSMIC	serous ovarian	NA					 serous ovarian cosmic serous ovarian 	reproductive	ovary			
+LUAD	IntoGen	Lung adenocarcinoma	3910		lung adenocarcinoma	LUAD		 luad luad intogen lung adenocarcinoma lung adenocarcinoma	respiratory	lung	carcinoma	adeno	
+CM	IntoGen	Cutaneous melanoma	8923	C43|C43.9	skin melanoma	SKCM	c43 c439	c43 c439 skcm cm intogen cutaneous melanoma skin melanoma	integumentary	skin	melanoma		
+CM	IntoGen	Cutaneous melanoma	8923	C43|C43.9	skin melanoma	CM	c43 c439	c43 c439 cm cm intogen cutaneous melanoma skin melanoma	integumentary	skin	melanoma		
+LUSC	IntoGen	Lung squamous cell carcinoma	3907		lung squamous cell carcinoma	LUSC		 lusc lusc intogen lung squamous cell carcinoma lung squamous cell carcinoma	respiratory	lung	carcinoma	squamous cell	
+PRAD	IntoGen	Prostate adenocarcinoma	2526		prostate adenocarcinoma	PRAD		 prad prad intogen prostate adenocarcinoma prostate adenocarcinoma	reproductive	prostate	carcinoma	adeno	
+HNSC	IntoGen	Head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSC		 hnsc hnsc intogen head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+HNSC	IntoGen	Head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSCC		 hnscc hnsc intogen head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+RCCC	IntoGen	Renal clear cell carcinoma	4467		clear cell renal cell carcinoma	CCRCC		 ccrcc rccc intogen renal clear cell carcinoma clear cell renal cell carcinoma	genitourinary	kidney	carcinoma	clear-cell	
+melanoma	COSMIC	melanoma	1909		melanoma	MEL		 mel melanoma cosmic melanoma melanoma	integumentary		melanoma		
+multiple other tumour types	COSMIC	multiple other tumour types	NA					 multiple other tumour types cosmic multiple other tumour types 					
+glioma	COSMIC	glioma	NA					 glioma cosmic glioma 	nervous	cns	glioma		
+NSCLC	COSMIC	lung non-small cell carcinoma	3908		lung non-small cell carcinoma	NSCLC		 nsclc nsclc cosmic lung non small cell carcinoma lung non small cell carcinoma	respiratory	lung	carcinoma	non-small cell	
+other tumour types	COSMIC	other tumour types	NA					 other tumour types cosmic other tumour types 					
+gastric	COSMIC	gastric	NA					 gastric cosmic gastric 	digestive	stomach			
+colorectal	COSMIC	colorectal	NA					 colorectal cosmic colorectal 					
+endometrial	COSMIC	endometrial	NA					 endometrial cosmic endometrial 					
+T-ALL	COSMIC	T-cell acute lymphoblastic leukaemia	5603	C91.5|C91.50	T-cell acute lymphoblastic leukemia	T-ALL	c915 c9150	c915 c9150 t all t all cosmic t cell acute lymphoblastic leukaemia t cell acute lymphoblastic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+Soft tissue sarcoma	Uniprot	Soft tissue sarcoma	NA					 soft tissue sarcoma uniprot soft tissue sarcoma 			sarcoma		
+Osteosarcoma	Uniprot	Osteosarcoma	3347		osteosarcoma	OS		 os osteosarcoma uniprot osteosarcoma osteosarcoma	muscolskeletal	bone	sarcoma	osteo	
+Glioma	Uniprot	Glioma	NA					 glioma uniprot glioma 	nervous	cns	glioma		
+sarcoma	COSMIC	sarcoma	1115	C49	sarcoma		c49	c49 sarcoma cosmic sarcoma sarcoma			sarcoma		
+glioblastoma	COSMIC	glioblastoma	NA			GB		 gb glioblastoma cosmic glioblastoma 					
+bladder	COSMIC	bladder	NA					 bladder cosmic bladder 	genitourinary	bladder			
+retinoblastoma	COSMIC	retinoblastoma	768		retinoblastoma	RBL		 rbl retinoblastoma cosmic retinoblastoma retinoblastoma	visual	eye	blastoma	retino	
+AML	IntoGen	Acute myeloid leukemia	9119		acute myeloid leukemia	AML		 aml aml intogen acute myeloid leukemia acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+neurofibroma	COSMIC	neurofibroma	962		neurofibroma	NFIB		 nfib neurofibroma cosmic neurofibroma neurofibroma	nervous	cns	fibroma	neuro	
+meningioma	COSMIC	meningioma	3565	D32.9	meningioma	MNG	d329	d329 mng meningioma cosmic meningioma meningioma	nervous	meninges	meningioma		
+acoustic neuroma	COSMIC	acoustic neuroma	12689		acoustic neuroma			 acoustic neuroma cosmic acoustic neuroma acoustic neuroma	auditory	ear			
+renal	COSMIC	renal	NA					 renal cosmic renal 	genitourinary	kidney			
+prostate	COSMIC	prostate	NA			PROSTATE		 prostate prostate cosmic prostate 	reproductive	prostate			
+malignant rhabdoid	COSMIC	rhabdoid cancer	3672		rhabdoid cancer	MRT		 mrt malignant rhabdoid cosmic rhabdoid cancer rhabdoid cancer				rhabdo	
+MM	COSMIC	Multiple myeloma	9538		multiple myeloma	MM		 mm mm cosmic multiple myeloma multiple myeloma	hematopoeitic	bone marrow	myeloma	multiple	
+ALL	COSMIC	Acute lymphoblastic leukemia	9952	C91.0|C91.00	acute lymphocytic leukemia	ALL	c910 c9100	c910 c9100 all all cosmic acute lymphoblastic leukemia acute lymphocytic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+DLBCL	COSMIC	diffuse large B-cell lymphoma	50745		diffuse large B-cell lymphoma	DLBCL		 dlbcl dlbcl cosmic diffuse large b cell lymphoma diffuse large b cell lymphoma	hematopoeitic		lymphoma	b-cell	large
+neuroblastoma	COSMIC	neuroblastoma	769		neuroblastoma	NBL		 nbl neuroblastoma cosmic neuroblastoma neuroblastoma	nervous	nerves	blastoma	neuro	
+neuroblastoma	COSMIC	neuroblastoma	769		neuroblastoma	NB		 nb neuroblastoma cosmic neuroblastoma neuroblastoma					
+Burkitt lymphoma	COSMIC	Burkitt lymphoma	8584	C83.7|C83.70	Burkitt lymphoma	BL	c837 c8370	c837 c8370 bl burkitt lymphoma cosmic burkitt lymphoma burkitt lymphoma	hematopoeitic		lymphoma	burkitt	
+amplified in other cancers	COSMIC	amplified in other cancers	NA					 amplified in other cancers cosmic amplified in other cancers 					
+B-CLL	COSMIC	B-cell chronic lymphocytic leukemia	1040	C91.1|C91.10	chronic lymphocytic leukemia	CLL	c911 c9110	c911 c9110 cll b cll cosmic b cell chronic lymphocytic leukemia chronic lymphocytic leukemia	hematopoeitic	blood	leukemia	b-cell	
+Neuroblastoma	Uniprot	Neuroblastoma	769		neuroblastoma	NBL		 nbl neuroblastoma uniprot neuroblastoma neuroblastoma	nervous	nerves	blastoma	neuro	
+Neuroblastoma	Uniprot	Neuroblastoma	769		neuroblastoma	NB		 nb neuroblastoma uniprot neuroblastoma neuroblastoma					
+Wilms tumour	COSMIC	Wilms tumour	NA					 wilms tumour cosmic wilms tumour 					
+cancers from epithelial neural and hematopoietic origin	Uniprot	cancers from epithelial neural and hematopoietic origin	NA					 cancers from epithelial neural and hematopoietic origin uniprot cancers from epithelial neural and hematopoietic origin 	hematopoeitic				
+digestive tract cancers	Uniprot	digestive tract cancers	NA					 digestive tract cancers uniprot digestive tract cancers 	digestive				
+B-cell leukemia (B-CLL)	Uniprot	B-cell chronic lymphocytic leukemia	1040	C91.1|C91.10	chronic lymphocytic leukemia	CLL	c911 c9110	c911 c9110 cll b cell leukemia b cll uniprot b cell chronic lymphocytic leukemia chronic lymphocytic leukemia	hematopoeitic	blood	leukemia	b-cell	
+non small cell lung carcinomas (NSCLC)	Uniprot	non-small cell lung carcinoma	3908		lung non-small cell carcinoma			 non small cell lung carcinomas nsclc uniprot non small cell lung carcinoma lung non small cell carcinoma	respiratory	lung	carcinoma	non-small cell	
+AML	COSMIC	Acute myeloid leukemia	9119		acute myeloid leukemia	AML		 aml aml cosmic acute myeloid leukemia acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+GBM	COSMIC	Glioblastoma multiforme	3068		glioblastoma multiforme	GBM		 gbm gbm cosmic glioblastoma multiforme glioblastoma multiforme	nervous	cns	blastoma	glio	multiforme
+ALCL	COSMIC	anaplastic large cell lymphoma	50744		anaplastic large cell lymphoma	ALCL		 alcl alcl cosmic anaplastic large cell lymphoma anaplastic large cell lymphoma	hematopoeitic	blood	lymphoma	t-cell	
+inflammatory myofibroblastic tumour	COSMIC	inflammatory myofibroblastic tumor	50905		inflammatory myofibroblastic tumor	IMT		 imt inflammatory myofibroblastic tumour cosmic inflammatory myofibroblastic tumor inflammatory myofibroblastic tumor					
+Spitzoid tumour	COSMIC	Spitzoid tumour	NA					 spitzoid tumour cosmic spitzoid tumour 					
+desmoid	COSMIC	desmoid	NA					 desmoid cosmic desmoid 					
+hepatoblastoma	COSMIC	hepatoblastoma	687	C22.2	hepatoblastoma	LIHB	c222	c222 lihb hepatoblastoma cosmic hepatoblastoma hepatoblastoma	digestive	liver	blastoma	hepato	
+other CNS	COSMIC	other CNS	NA					 other cns cosmic other cns 					
+colon cancer	COSMIC	colon cancer	219	C18|C18.9	colon cancer		c18 c189	c18 c189 colon cancer cosmic colon cancer colon cancer	digestive	﻿colorectal			
+lymphoma	COSMIC	lymphoma	60058	C85.9	lymphoma		c859	c859 lymphoma cosmic lymphoma lymphoma	hematopoeitic		lymphoma	non-hodgkin	
+clear cell ovarian carcinoma	COSMIC	clear cell ovarian carcinoma	50934		ovarian clear cell carcinoma			 clear cell ovarian carcinoma cosmic clear cell ovarian carcinoma ovarian clear cell carcinoma			carcinoma		
+RCC	COSMIC	RCC	4450		renal cell carcinoma	RCC		 rcc rcc cosmic rcc renal cell carcinoma	genitourinary	kidney	carcinoma	renal cell	
+T-PLL	COSMIC	T-PLL	NA			T-PLL		 t pll t pll cosmic t pll 	hematopoeitic			t-cell	
+hepatocellular carcinoma	COSMIC	hepatocellular carcinoma	684	C22.0	hepatocellular carcinoma	HCC	c220	c220 hcc hepatocellular carcinoma cosmic hepatocellular carcinoma hepatocellular carcinoma	digestive	liver	carcinoma	hepatocellular	
+sporadic medulloblastoma	COSMIC	sporadic medulloblastoma	NA					 sporadic medulloblastoma cosmic sporadic medulloblastoma 	nervous	cns	blastoma	medullo	
+uterine carcinosarcoma	COSMIC	uterine carcinosarcoma	6171		uterine carcinosarcoma			 uterine carcinosarcoma cosmic uterine carcinosarcoma uterine carcinosarcoma	reproductive	uterus	sarcoma		
+CLL	COSMIC	Chronic lymphocytic leukemia	1040		chronic lymphocytic leukemia	CLL		 cll cll cosmic chronic lymphocytic leukemia chronic lymphocytic leukemia	hematopoeitic	blood	leukemia	b-cell	
+MALT	COSMIC	MALT lymphoma	50909		MALT lymphoma	MALT		 malt malt cosmic malt lymphoma malt lymphoma	hematopoeitic		lymphoma	malt	
+MCL	COSMIC	mantle cell lymphoma	50746		mantle cell lymphoma	MCL		 mcl mcl cosmic mantle cell lymphoma mantle cell lymphoma	hematopoeitic		lymphoma	mantle cell	
+ovarian cancer	COSMIC	ovarian cancer	2394	C56	ovarian cancer		c56	c56 ovarian cancer cosmic ovarian cancer ovarian cancer	reproductive	ovary			
+lung cancer	COSMIC	lung cancer	1324	C34.1|C34.2|C34.3	lung cancer		c341 c342 c343	c341 c342 c343 lung cancer cosmic lung cancer lung cancer	respiratory	lung			
+bladder carcinoma	COSMIC	bladder carcinoma	4007		bladder carcinoma	BLCA		 blca bladder carcinoma cosmic bladder carcinoma bladder carcinoma	genitourinary	bladder	carcinoma		
+Ewing sarcoma	COSMIC	Ewing sarcoma	3369		Ewing sarcoma	ES		 es ewing sarcoma cosmic ewing sarcoma ewing sarcoma			sarcoma		
+soft tissue sarcoma	COSMIC	soft tissue sarcoma	NA					 soft tissue sarcoma cosmic soft tissue sarcoma 			sarcoma		
+lung adenocarcinoma	COSMIC	lung adenocarcinoma	3910		lung adenocarcinoma	LUAD		 luad lung adenocarcinoma cosmic lung adenocarcinoma lung adenocarcinoma	respiratory	lung	carcinoma	adeno	
+oral SCC	COSMIC	oral squamous cell carcinoma	50866		oral squamous cell carcinoma			 oral scc cosmic oral squamous cell carcinoma oral squamous cell carcinoma		lip, oral cavity and pharynx	carcinoma	small cell	
+renal cell carcinoma	COSMIC	renal cell carcinoma	4450		renal cell carcinoma	RCC		 rcc renal cell carcinoma cosmic renal cell carcinoma renal cell carcinoma	genitourinary	kidney	carcinoma	renal cell	
+oesophageal SCC	COSMIC	oesophageal squamous cell carcinoma	NA					 oesophageal scc cosmic oesophageal squamous cell carcinoma 			carcinoma	small cell	
+medulloblastoma	COSMIC	medulloblastoma	50902		medulloblastoma	MBL		 mbl medulloblastoma cosmic medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+medulloblastoma	COSMIC	medulloblastoma	50902		medulloblastoma	MB		 mb medulloblastoma cosmic medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+CRC	COSMIC	Colorectal carcinoma	80199		colorectal carcinoma	CRC		 crc crc cosmic colorectal carcinoma colorectal carcinoma	digestive	﻿colorectal	carcinoma		
+malignant mesothelioma	COSMIC	malignant mesothelioma	1790		malignant mesothelioma			 malignant mesothelioma cosmic malignant mesothelioma malignant mesothelioma	respiratory	mesothelium	mesothelioma		
+oesophageal squamous cell carcinoma	COSMIC	oesophageal squamous cell carcinoma	NA					 oesophageal squamous cell carcinoma cosmic oesophageal squamous cell carcinoma 			carcinoma		
+urothelial cancer	COSMIC	urothelial cancer	NA					 urothelial cancer cosmic urothelial cancer 					
+parathyroid tumours	COSMIC	parathyroid tumor	NA					 parathyroid tumours cosmic parathyroid tumor 	endocrine	parathyroid gland			
+pancreatic neuroendocrine tumour	COSMIC	pancreatic neuroendocrine tumour	NA					 pancreatic neuroendocrine tumour cosmic pancreatic neuroendocrine tumour 	digestive	pancreas			
+CNS tumours	COSMIC	CNS tumor	NA					 cns tumours cosmic cns tumor 					
+small cell lung carcinoma	COSMIC	small cell lung carcinoma	5409		lung small cell carcinoma	SCLC		 sclc small cell lung carcinoma cosmic small cell lung carcinoma lung small cell carcinoma	pulmonary	lung	carcinoma	small cell	
+papillary thyroid	COSMIC	papillary thyroid	NA					 papillary thyroid cosmic papillary thyroid 	endocrine	thyroid gland			
+NHL	COSMIC	B-cell non-Hodgkin lymphoma	NA			NHL		 nhl nhl cosmic b cell non hodgkin lymphoma 	hematopoeitic	cns	lymphoma	non-hodgkin	oligo
+B-ALL	COSMIC	B-ALL	NA			B-ALL		 b all b all cosmic b all 	hematopoeitic	blood	leukemia	b-cell	
+clear cell renal carcinoma	COSMIC	clear cell renal cell carcinoma	4467		clear cell renal cell carcinoma	CCRCC		 ccrcc clear cell renal carcinoma cosmic clear cell renal cell carcinoma clear cell renal cell carcinoma	genitourinary	kidney	carcinoma	clear-cell	
+breast cancer	COSMIC	breast cancer	1612	C50|C50-C50	breast cancer		c50 c50-c50	c50 c50 c50 breast cancer cosmic breast cancer breast cancer	reproductive	breast			
+kidney cancer	COSMIC	kidney cancer	263	C64	kidney cancer		c64	c64 kidney cancer cosmic kidney cancer kidney cancer	genitourinary	kidney			
+HNSCC	COSMIC	head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSC		 hnsc hnscc cosmic head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+HNSCC	COSMIC	head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSCC		 hnscc hnscc cosmic head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+pilocytic astrocytoma	COSMIC	pilocytic astrocytoma	4851		pilocytic astrocytoma	PAST		 past pilocytic astrocytoma cosmic pilocytic astrocytoma pilocytic astrocytoma	nervous	cns	cytoma	astro	
+Hodgkin lymphoma	COSMIC	Hodgkin lymphoma	8567	C81|C81.9	Hodgkin's lymphoma	HL	c81 c819	c81 c819 hl hodgkin lymphoma cosmic hodgkin lymphoma hodgkin s lymphoma	hematopoeitic	cns	lymphoma	hodgkin	oligo
+endometrium	COSMIC	endometrium	NA					 endometrium cosmic endometrium 	reproductive	uterus			
+small intestine	COSMIC	small intestine	NA					 small intestine cosmic small intestine 	digestive	small intestine			
+oesophageal squamous carcinoma	COSMIC	oesophageal squamous carcinoma	NA					 oesophageal squamous carcinoma cosmic oesophageal squamous carcinoma 			carcinoma		
+multiple myeloma	COSMIC	multiple myeloma	9538	C90.0|C90.00	multiple myeloma	MM	c900 c9000	c900 c9000 mm multiple myeloma cosmic multiple myeloma multiple myeloma	hematopoeitic	bone marrow	myeloma	multiple	
+marginal zone B-cell lymphomas	COSMIC	marginal zone B-cell lymphoma	50748		marginal zone B-cell lymphoma			 marginal zone b cell lymphomas cosmic marginal zone b cell lymphoma marginal zone b cell lymphoma	hematopoeitic		lymphoma		
+PMBL	COSMIC	primary mediastinal B-cell lymphoma	80210	C85.2	primary mediastinal B-cell lymphoma	PMBL	c852	c852 pmbl pmbl cosmic primary mediastinal b cell lymphoma primary mediastinal b cell lymphoma	hematopoeitic	mediastinum	lymphoma	b-cell	
+pulmonary lymphangioleiomyomatosis (LAM)	COSMIC	pulmonary lymphangioleiomyomatosis	3319		lymphangioleiomyomatosis			 pulmonary lymphangioleiomyomatosis lam cosmic pulmonary lymphangioleiomyomatosis lymphangioleiomyomatosis	reproductive	uterus	myoma	leio	
+renal angiomyolipoma	COSMIC	renal angiomyolipoma	8411		kidney angiomyolipoma	RAML		 raml renal angiomyolipoma cosmic renal angiomyolipoma kidney angiomyolipoma	genitourinary	kidney	lipoma	myo	angio
+haemangioma	COSMIC	haemangioma	NA					 haemangioma cosmic haemangioma 					
+pheochromocytoma	COSMIC	pheochromocytoma	50771		pheochromocytoma	PHC		 phc pheochromocytoma cosmic pheochromocytoma pheochromocytoma	endocrine	adrenal	pheochromocytoma		
+desmoplastic small round cell tumour	COSMIC	desmoplastic small round cell tumour	NA					 desmoplastic small round cell tumour cosmic desmoplastic small round cell tumour 					
+ALL	IntoGen	Acute lymphoblastic leukemia	9952	C91.0|C91.00	acute lymphocytic leukemia	ALL	c910 c9100	c910 c9100 all all intogen acute lymphoblastic leukemia acute lymphocytic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+CLL	IntoGen	Chronic lymphocytic leukemia	1040		chronic lymphocytic leukemia	CLL		 cll cll intogen chronic lymphocytic leukemia chronic lymphocytic leukemia	hematopoeitic	blood	leukemia	b-cell	
+CML	COSMIC	CML	8552		chronic myeloid leukemia	CML		 cml cml cosmic cml chronic myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+NSCLC	IntoGen	lung non-small cell carcinoma	3908		lung non-small cell carcinoma	NSCLC		 nsclc nsclc intogen lung non small cell carcinoma lung non small cell carcinoma	respiratory	lung	carcinoma	non-small cell	
+Non-Hodgkin lymphoma	Uniprot	Non-Hodgkin lymphoma	60060		non-Hodgkin lymphoma	NHL		 nhl non hodgkin lymphoma uniprot non hodgkin lymphoma non hodgkin lymphoma	hematopoeitic	cns	lymphoma	non-hodgkin	oligo
+Non-Hodgkin lymphoma	Uniprot	Non-Hodgkin lymphoma	60060		non-Hodgkin lymphoma	B-NHL		 b nhl non hodgkin lymphoma uniprot non hodgkin lymphoma non hodgkin lymphoma	hematopoeitic	cns	lymphoma	non-hodgkin	b-cell
+T-cell lymphoma	COSMIC	T-cell lymphoma	NA					 t cell lymphoma cosmic t cell lymphoma 	hematopoeitic		lymphoma		
+THCA	IntoGen	thyroid gland carcinoma	3963		thyroid gland carcinoma	THCA		 thca thca intogen thyroid gland carcinoma thyroid gland carcinoma	endocrine	thyroid gland	carcinoma		
+Papillary thyroid carcinomas (PTCs)	Uniprot	thyroid gland papillary carcinoma	3969		thyroid gland papillary carcinoma			 papillary thyroid carcinomas ptcs uniprot thyroid gland papillary carcinoma thyroid gland papillary carcinoma	endocrine	thyroid gland	carcinoma		
+DLBCL	IntoGen	diffuse large B-cell lymphoma	50745		diffuse large B-cell lymphoma	DLBCL		 dlbcl dlbcl intogen diffuse large b cell lymphoma diffuse large b cell lymphoma	hematopoeitic		lymphoma	b-cell	large
+MM	IntoGen	Multiple myeloma	9538		multiple myeloma	MM		 mm mm intogen multiple myeloma multiple myeloma	hematopoeitic	bone marrow	myeloma	multiple	
+congenital fibrosarcoma	COSMIC	congenital fibrosarcoma	8418		congenital fibrosarcoma			 congenital fibrosarcoma cosmic congenital fibrosarcoma congenital fibrosarcoma			sarcoma		
+secretory breast	COSMIC	breast secretory carcinoma	4922		breast secretory carcinoma			 secretory breast cosmic breast secretory carcinoma breast secretory carcinoma	reproductive	breast	carcinoma		
+PA	IntoGen	Pylocytic astrocytoma	NA			PA		 pa pa intogen pylocytic astrocytoma 					
+Papillary Thyroid Carcinoma	Uniprot	thyroid gland papillary carcinoma	3969		thyroid gland papillary carcinoma			 papillary thyroid carcinoma uniprot thyroid gland papillary carcinoma thyroid gland papillary carcinoma	endocrine	thyroid gland	carcinoma		
+medullary thyroid	COSMIC	medullary thyroid	NA					 medullary thyroid cosmic medullary thyroid 	endocrine	thyroid gland			
+Glioblastoma	Uniprot	Glioblastoma	NA			GB		 gb glioblastoma uniprot glioblastoma 					
+cholangiocarcinoma	COSMIC	cholangiocarcinoma	4947	C22.1	cholangiocarcinoma	CHOL	c221	c221 chol cholangiocarcinoma cosmic cholangiocarcinoma cholangiocarcinoma	digestive	biliary tract	carcinoma	cholangio	
+borderline ovarian	COSMIC	borderline ovarian	NA					 borderline ovarian cosmic borderline ovarian 	reproductive	ovary			
+Acute Lymphoblastic Leukemia (ALL)	Uniprot	Acute Lymphoblastic Leukemia	9952	C91.0|C91.00	acute lymphocytic leukemia	ALL	c910 c9100	c910 c9100 all acute lymphoblastic leukemia all uniprot acute lymphoblastic leukemia acute lymphocytic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+Synovial Sarcoma	Uniprot	Synovial Sarcoma	5485		synovial sarcoma	SYNS		 syns synovial sarcoma uniprot synovial sarcoma synovial sarcoma	muscolskeletal	joint	sarcoma		
+synovial sarcoma	COSMIC	synovial sarcoma	5485		synovial sarcoma	SYNS		 syns synovial sarcoma cosmic synovial sarcoma synovial sarcoma	muscolskeletal	joint	sarcoma		
+Aneurysmal Bone Cyst	Uniprot	Aneurysmal Bone Cyst	NA					 aneurysmal bone cyst uniprot aneurysmal bone cyst 	muscolskeletal	bone			
+aneurysmal bone cyst	COSMIC	aneurysmal bone cyst	NA					 aneurysmal bone cyst cosmic aneurysmal bone cyst 	muscolskeletal	bone			
+Acute Megakaryoblastic Leukemia (AMKL| FAB-M7)	Uniprot	Acute Megakaryoblastic Leukemia	8761	C94.2|C94.20	megakaryocytic leukemia	AMKL	c942 c9420	c942 c9420 amkl acute megakaryoblastic leukemia amkl fab m7 uniprot acute megakaryoblastic leukemia megakaryocytic leukemia	hematopoeitic	blood	leukemia	megakaryoblastic	
+Papillary Thyroid Carcinomas (PTCs)	Uniprot	Papillary Thyroid Carcinomas	NA					 papillary thyroid carcinomas ptcs uniprot papillary thyroid carcinomas 	endocrine	thyroid gland	carcinoma		
+Acute Myeloid Leukemia of M4EO Subtype	Uniprot	Acute Myeloid Leukemia of M4EO Subtype	NA					 acute myeloid leukemia of m4eo subtype uniprot acute myeloid leukemia of m4eo subtype 	hematopoeitic	blood	leukemia	myeloid	
+Childhood Acute Lymphoblastic Leukemia (ALL)	Uniprot	Childhood Acute Lymphoblastic Leukemia	80144		childhood acute lymphocytic leukemia			 childhood acute lymphoblastic leukemia all uniprot childhood acute lymphoblastic leukemia childhood acute lymphocytic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+Acute Leukemia	Uniprot	Acute Leukemia	12603		acute leukemia			 acute leukemia uniprot acute leukemia acute leukemia	hematopoeitic	blood	leukemia		
+Therapy-Related Myeloid Malignancies	Uniprot	Therapy-Related Myeloid Malignancies	NA					 therapy related myeloid malignancies uniprot therapy related myeloid malignancies 				myeloid	
+pre B-ALL	COSMIC	pre B-ALL	NA					 pre b all cosmic pre b all 	hematopoeitic	blood	leukemia	b-cell	
+Salivary Gland Pleiomorphic Adenoma	Uniprot	Salivary Gland Pleiomorphic Adenoma	NA					 salivary gland pleiomorphic adenoma uniprot salivary gland pleiomorphic adenoma 	exocrine	﻿salivary gland			
+Lipoblastoma	Uniprot	Lipoblastoma	NA					 lipoblastoma uniprot lipoblastoma 			sarcoma	lipo	
+salivary adenoma	COSMIC	salivary adenoma	NA					 salivary adenoma cosmic salivary adenoma 	exocrine	﻿salivary gland			
+lipoblastoma	COSMIC	lipoblastoma	NA					 lipoblastoma cosmic lipoblastoma 			sarcoma	lipo	
+T-cell acute lymphoblastic leukemias (T-ALL)	Uniprot	T-cell acute lymphoblastic leukemias	NA					 t cell acute lymphoblastic leukemias t all uniprot t cell acute lymphoblastic leukemias 	hematopoeitic	blood	leukemia	blastic	lympho
+Acute Myeloid Leukemia	Uniprot	Acute Myeloid Leukemia	9119		acute myeloid leukemia	AML		 aml acute myeloid leukemia uniprot acute myeloid leukemia acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+Therapy-Related Myelodysplastic Syndrome	Uniprot	Therapy-Related Myelodysplastic Syndrome	NA			TMDS		 tmds therapy related myelodysplastic syndrome uniprot therapy related myelodysplastic syndrome 					
+Alveolar Soft Part Sarcoma	Uniprot	Alveolar Soft Part Sarcoma	4239		alveolar soft part sarcoma	ASPS		 asps alveolar soft part sarcoma uniprot alveolar soft part sarcoma alveolar soft part sarcoma	respiratory	lung	sarcoma		
+Papillary Renal Cell Carcinoma	Uniprot	Papillary Renal Cell Carcinoma	4465		papillary renal cell carcinoma	PRCC		 prcc papillary renal cell carcinoma uniprot papillary renal cell carcinoma papillary renal cell carcinoma	genitourinary	kidney	carcinoma	renal cell	papillary
+papillary renal	COSMIC	papillary renal cell carcinoma	4465		papillary renal cell carcinoma	PRCC		 prcc papillary renal cosmic papillary renal cell carcinoma papillary renal cell carcinoma	genitourinary	kidney	carcinoma	renal cell	papillary
+alveolar soft part sarcoma	COSMIC	alveolar soft part sarcoma	4239		alveolar soft part sarcoma	ASPS		 asps alveolar soft part sarcoma cosmic alveolar soft part sarcoma alveolar soft part sarcoma	respiratory	lung	sarcoma		
+Myeloproliferative disorder chronic with eosinophilia (MPE)	Uniprot	Myeloproliferative disorder chronic with eosinophilia	111344		myeloproliferative disorder with eosinophilia			 myeloproliferative disorder chronic with eosinophilia mpe uniprot myeloproliferative disorder chronic with eosinophilia myeloproliferative disorder with eosinophilia	hematopoeitic				
+MPN	COSMIC	myeloproliferative neoplasm	2226	D47.1	myeloproliferative neoplasm	MPN	d471	d471 mpn mpn cosmic myeloproliferative neoplasm myeloproliferative neoplasm	hematopoeitic				
+CMML	COSMIC	chronic myelomonocytic leukemia	80188		chronic myelomonocytic leukemia	CMML		 cmml cmml cosmic chronic myelomonocytic leukemia chronic myelomonocytic leukemia	hematopoeitic	blood	leukemia	myelomonocytic	
+Myelodysplastic syndrome (MDS)	Uniprot	Myelodysplastic syndrome	50908		myelodysplastic syndrome			 myelodysplastic syndrome mds uniprot myelodysplastic syndrome myelodysplastic syndrome					
+acute megakaryocytic leukaemia	COSMIC	megakaryocytic leukemia	8761	C94.2|C94.20	megakaryocytic leukemia		c942 c9420	c942 c9420 acute megakaryocytic leukaemia cosmic megakaryocytic leukemia megakaryocytic leukemia	hematopoeitic	blood	leukemia	megakaryoblastic	
+Rhabdomyosarcoma	Uniprot	Rhabdomyosarcoma	3247		rhabdomyosarcoma	RMS		 rms rhabdomyosarcoma uniprot rhabdomyosarcoma rhabdomyosarcoma			sarcoma	myo	rhabdo
+alveolar rhabdomyosarcoma	COSMIC	alveolar rhabdomyosarcoma	4051		alveolar rhabdomyosarcoma	ARMS		 arms alveolar rhabdomyosarcoma cosmic alveolar rhabdomyosarcoma alveolar rhabdomyosarcoma	respiratory	lung	sarcoma	myo	rhabdo
+Acute myeloid leukemia of M4EO subtype	Uniprot	Acute myeloid leukemia of M4EO subtype	NA					 acute myeloid leukemia of m4eo subtype uniprot acute myeloid leukemia of m4eo subtype 	hematopoeitic	blood	leukemia	myeloid	
+Acute leukemias	Uniprot	Acute leukemias	NA					 acute leukemias uniprot acute leukemias 	hematopoeitic	blood	leukemia		
+Alveolar soft part sarcoma	Uniprot	Alveolar soft part sarcoma	4239		alveolar soft part sarcoma	ASPS		 asps alveolar soft part sarcoma uniprot alveolar soft part sarcoma alveolar soft part sarcoma	respiratory	lung	sarcoma		
+multiple different leukaemia and lymphoma tumour types including ALL	COSMIC	multiple different leukaemia and lymphoma tumour types including ALL	NA					 multiple different leukaemia and lymphoma tumour types including all cosmic multiple different leukaemia and lymphoma tumour types including all 	hematopoeitic		lymphoma		
+MDS	COSMIC	MDS	60469	Q93.88	Miller-Dieker lissencephaly syndrome	MDS	q9388	q9388 mds mds cosmic mds miller dieker lissencephaly syndrome					
+Acute myeloid leukemia (AML)	Uniprot	Acute myeloid leukemia	9119		acute myeloid leukemia	AML		 aml acute myeloid leukemia aml uniprot acute myeloid leukemia acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+Ewing sarcoma (ES)	Uniprot	Ewing sarcoma	3369		Ewing sarcoma	ES		 es ewing sarcoma es uniprot ewing sarcoma ewing sarcoma			sarcoma		
+Angiomatoid fibrous histiocytoma (AFH)	Uniprot	Angiomatoid fibrous histiocytoma	NA			AFH		 afh angiomatoid fibrous histiocytoma afh uniprot angiomatoid fibrous histiocytoma 			histiocytoma	fibro	angio
+desmoplastic small round cell tumour 	COSMIC	desmoplastic small round cell tumour 	NA					 desmoplastic small round cell tumour cosmic desmoplastic small round cell tumour 					
+clear cell sarcoma	COSMIC	clear cell sarcoma	4233		clear cell sarcoma	CCS		 ccs clear cell sarcoma cosmic clear cell sarcoma clear cell sarcoma		soft parts	sarcoma	clear-cell	melanoma
+myoepithelioma	COSMIC	myoepithelioma	2661		myoepithelioma			 myoepithelioma cosmic myoepithelioma myoepithelioma					
+mesothelioma	COSMIC	mesothelioma	NA					 mesothelioma cosmic mesothelioma 	respiratory	mesothelium	mesothelioma		
+Pilocytic astrocytomas	Uniprot	Pilocytic astrocytomas	NA					 pilocytic astrocytomas uniprot pilocytic astrocytomas 	nervous	cns	astrocytoma		
+pancreas acinar carcinoma	COSMIC	pancreas acinar carcinoma	NA					 pancreas acinar carcinoma cosmic pancreas acinar carcinoma 	digestive	pancreas	carcinoma		
+melanocytic nevus	COSMIC	melanocytic nevus	NA					 melanocytic nevus cosmic melanocytic nevus 	integumentary		melanoma		
+lipoma	COSMIC	lipoma	3315	D17|D17.9	lipoma		d17 d179	d17 d179 lipoma cosmic lipoma lipoma			sarcoma	lipo	
+AL	COSMIC	AL	NA			AL		 al al cosmic al 					
+malignant melanoma of soft parts	COSMIC	malignant melanoma of soft parts	4233		clear cell sarcoma	CCS		 ccs malignant melanoma of soft parts cosmic malignant melanoma of soft parts clear cell sarcoma	integumentary	soft parts	sarcoma	clear-cell	melanoma
+angiomatoid fibrous histiocytoma	COSMIC	angiomatoid fibrous histiocytoma	NA			AFH		 afh angiomatoid fibrous histiocytoma cosmic angiomatoid fibrous histiocytoma 			histiocytoma	fibro	angio
+APL (translocation)	COSMIC	APL	NA					 apl translocation cosmic apl 	hematopoeitic	blood	leukemia	promyelocytic	
+gastric adenocarcinoma	COSMIC	gastric adenocarcinoma	3717		gastric adenocarcinoma			 gastric adenocarcinoma cosmic gastric adenocarcinoma gastric adenocarcinoma	digestive	stomach	carcinoma		
+lethal midline carcinoma of young people	COSMIC	lethal midline carcinoma of young people	NA					 lethal midline carcinoma of young people cosmic lethal midline carcinoma of young people 			carcinoma		
+epithelioid haemangioendothelioma	COSMIC	epithelioid haemangioendothelioma	NA					 epithelioid haemangioendothelioma cosmic epithelioid haemangioendothelioma 					
+JMML	COSMIC	juvenile myelomonocytic leukemia	50458	C93.3|C93.30	juvenile myelomonocytic leukemia	JMML	c933 c9330	c933 c9330 jmml jmml cosmic juvenile myelomonocytic leukemia juvenile myelomonocytic leukemia	hematopoeitic	blood	leukemia	myelomonocytic	
+leiomyoma	COSMIC	leiomyoma	127		leiomyoma	LM		 lm leiomyoma cosmic leiomyoma leiomyoma			myoma	leio	
+oligodendroglioma	COSMIC	oligodendroglioma	3181		oligodendroglioma	ODG		 odg oligodendroglioma cosmic oligodendroglioma oligodendroglioma	nervous	cns	glioma	dendro	oligo
+myxofibrosarcoma	COSMIC	myxofibrosarcoma	80534		myxofibrosarcoma	MFS		 mfs myxofibrosarcoma cosmic myxofibrosarcoma myxofibrosarcoma			sarcoma	fibro	myxo
+fibromyxoid sarcoma	COSMIC	fibromyxoid sarcoma	80534		myxofibrosarcoma	MFS		 mfs fibromyxoid sarcoma cosmic fibromyxoid sarcoma myxofibrosarcoma			sarcoma	fibro	myxo
+B-NHL	COSMIC	non-Hodgkin lymphoma	60060		non-Hodgkin lymphoma	NHL		 nhl b nhl cosmic non hodgkin lymphoma non hodgkin lymphoma	hematopoeitic	cns	lymphoma	non-hodgkin	b-cell
+B-NHL	COSMIC	non-Hodgkin lymphoma	60060		non-Hodgkin lymphoma	B-NHL		 b nhl b nhl cosmic non hodgkin lymphoma non hodgkin lymphoma	hematopoeitic	cns	lymphoma	non-hodgkin	b-cell
+Downs associated ALL	COSMIC	Downs associated ALL	NA					 downs associated all cosmic downs associated all 					
+salivary gland mucoepidermoid	COSMIC	salivary gland mucoepidermoid	NA					 salivary gland mucoepidermoid cosmic salivary gland mucoepidermoid 	exocrine	﻿salivary gland			
+pleomorphic salivary gland adenoma	COSMIC	pleomorphic salivary gland adenoma	NA					 pleomorphic salivary gland adenoma cosmic pleomorphic salivary gland adenoma 	exocrine	﻿salivary gland			
+liposarcoma	COSMIC	liposarcoma	3382		liposarcoma	LIPO		 lipo liposarcoma cosmic liposarcoma liposarcoma			sarcoma	lipo	
+AML*	COSMIC	AML*	NA			AML*		 aml aml cosmic aml 					
+prostate carcinoma	COSMIC	prostate carcinoma	10286		prostate carcinoma			 prostate carcinoma cosmic prostate carcinoma prostate carcinoma	reproductive	prostate	carcinoma		
+oesophagus cancer	COSMIC	oesophagus cancer	NA					 oesophagus cancer cosmic oesophagus cancer 	digestive	esophagus			
+mesenchymal chondrosarcoma	COSMIC	mesenchymal chondrosarcoma	4545		mesenchymal chondrosarcoma	MCHS		 mchs mesenchymal chondrosarcoma cosmic mesenchymal chondrosarcoma mesenchymal chondrosarcoma	muscolskeletal	cartilage	sarcoma	chondro	mesenchymal
+microfollicular thyroid adenoma	COSMIC	microfollicular thyroid adenoma	NA					 microfollicular thyroid adenoma cosmic microfollicular thyroid adenoma 	endocrine	thyroid gland			
+various benign mesenchymal tumours	COSMIC	various benign mesenchymal tumor	NA					 various benign mesenchymal tumours cosmic various benign mesenchymal tumor 					
+leukaemia	COSMIC	leukaemia	NA					 leukaemia cosmic leukaemia 					
+renal cell carcinoma (childhood epithelioid)	COSMIC	renal cell carcinoma	4450		renal cell carcinoma	RCC		 rcc renal cell carcinoma childhood epithelioid cosmic renal cell carcinoma renal cell carcinoma	genitourinary	kidney	carcinoma	renal cell	
+lung	COSMIC	lung	NA			LUNG		 lung lung cosmic lung 	respiratory	lung			
+T cell prolymphocytic leukaemia	COSMIC	T-cell prolymphocytic leukaemia	NA					 t cell prolymphocytic leukaemia cosmic t cell prolymphocytic leukaemia 	hematopoeitic				
+adenoid cystic carcinoma	COSMIC	adenoid cystic carcinoma	80202		adenoid cystic carcinoma	ACYC		 acyc adenoid cystic carcinoma cosmic adenoid cystic carcinoma adenoid cystic carcinoma			carcinoma	adeno	cyst
+solitary fibrous tumour	COSMIC	solitary fibrous tumour	NA					 solitary fibrous tumour cosmic solitary fibrous tumour 					
+meningeal haemangiopericytoma	COSMIC	meningeal haemangiopericytoma	NA					 meningeal haemangiopericytoma cosmic meningeal haemangiopericytoma 					
+chondrosarcoma	COSMIC	chondrosarcoma	3371		chondrosarcoma	CHS		 chs chondrosarcoma cosmic chondrosarcoma chondrosarcoma	muscolskeletal	cartilage	sarcoma	chondro	
+rhabdomyosarcoma	COSMIC	rhabdomyosarcoma	3247		rhabdomyosarcoma	RMS		 rms rhabdomyosarcoma cosmic rhabdomyosarcoma rhabdomyosarcoma			sarcoma	myo	rhabdo
+skin SCC	COSMIC	skin squamous cell carcinoma	3151		skin squamous cell carcinoma			 skin scc cosmic skin squamous cell carcinoma skin squamous cell carcinoma	integumentary	skin	carcinoma	small cell	
+lung SCC	COSMIC	lung squamous cell carcinoma	3907		lung squamous cell carcinoma	LUSC		 lusc lung scc cosmic lung squamous cell carcinoma lung squamous cell carcinoma	respiratory	lung	carcinoma	squamous cell	
+head and neck SCC	COSMIC	head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSC		 hnsc head and neck scc cosmic head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+head and neck SCC	COSMIC	head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSCC		 hnscc head and neck scc cosmic head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+APL	COSMIC	acute promyelocytic leukemia	60318	C92.4|C92.40	acute promyelocytic leukemia	APL	c924 c9240	c924 c9240 apl apl cosmic acute promyelocytic leukemia acute promyelocytic leukemia	hematopoeitic	blood	leukemia	promyelocytic	
+extraskeletal myxoid chondrosarcoma	COSMIC	extraskeletal myxoid chondrosarcoma	6496		extraskeletal myxoid chondrosarcoma	EMCHS		 emchs extraskeletal myxoid chondrosarcoma cosmic extraskeletal myxoid chondrosarcoma extraskeletal myxoid chondrosarcoma	muscolskeletal	cartilage	sarcoma	chondro	myxoid
+lethal midline carcinoma	COSMIC	lethal midline carcinoma	NA					 lethal midline carcinoma cosmic lethal midline carcinoma 			carcinoma		
+Down syndrome associated ALL	COSMIC	Down syndrome associated ALL	NA					 down syndrome associated all cosmic down syndrome associated all 					
+DFSP	COSMIC	dermatofibrosarcoma protuberans	3507		dermatofibrosarcoma protuberans	DFSP		 dfsp dfsp cosmic dermatofibrosarcoma protuberans dermatofibrosarcoma protuberans			sarcoma	fibro	dermato
+GIST	COSMIC	GIST	9253	C49.A	gastrointestinal stromal tumor	GIST	c49a	c49a gist gist cosmic gist gastrointestinal stromal tumor	digestive	intestine	gist		
+idiopathic hypereosinophilic syndrome	COSMIC	idiopathic hypereosinophilic syndrome	NA					 idiopathic hypereosinophilic syndrome cosmic idiopathic hypereosinophilic syndrome 					
+paediatric glioblastoma	COSMIC	paediatric glioblastoma	NA					 paediatric glioblastoma cosmic paediatric glioblastoma 					
+angiosarcoma	COSMIC	angiosarcoma	1816		angiosarcoma	ANGS		 angs angiosarcoma cosmic angiosarcoma angiosarcoma	reproductive	cervix	sarcoma	angio	
+follicular thyroid	COSMIC	follicular thyroid	NA					 follicular thyroid cosmic follicular thyroid 	endocrine	thyroid gland			
+uterine leiomyoma	COSMIC	uterine leiomyoma	13223	D25|D25.9	uterine fibroid	ULM	d25 d259	d25 d259 ulm uterine leiomyoma cosmic uterine leiomyoma uterine fibroid	reproductive	uterus	leiomyoma	leio	
+aCML	COSMIC	aCML	60597	C92.2|C92.20	atypical chronic myeloid leukemia		c922 c9220	c922 c9220 acml cosmic acml atypical chronic myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+sAML	COSMIC	sAML	NA					 saml cosmic saml 					
+MDS/MPN-U	COSMIC	MDS/MPN-U	NA			MDS/MPN-U		 mds mpn u mds mpn u cosmic mds mpn u 	hematopoeitic				
+follicular lymphoma	COSMIC	follicular lymphoma	50873		follicular lymphoma	FL		 fl follicular lymphoma cosmic follicular lymphoma follicular lymphoma	hematopoeitic		lymphoma	follicular	
+large granular lymphocytic leukaemia	COSMIC	large granular lymphocytic leukaemia	50751		T-cell large granular lymphocyte leukemia			 large granular lymphocytic leukaemia cosmic large granular lymphocytic leukaemia t cell large granular lymphocyte leukemia	hematopoeitic	blood	leukemia		
+skin basal cell	COSMIC	skin basal cell	NA					 skin basal cell cosmic skin basal cell 	integumentary	skin			
+endometrial stromal tumour	COSMIC	endometrial stromal tumour	NA					 endometrial stromal tumour cosmic endometrial stromal tumour 					
+peripheral T-cell lymphoma	COSMIC	peripheral T-cell lymphoma	50749		peripheral T-cell lymphoma			 peripheral t cell lymphoma cosmic peripheral t cell lymphoma peripheral t cell lymphoma	hematopoeitic		lymphoma		
+lymphoblastic leukaemia/biphasic	COSMIC	lymphoblastic leukaemia/biphasic	NA					 lymphoblastic leukaemia biphasic cosmic lymphoblastic leukaemia biphasic 	hematopoeitic				
+splenic marginal zone lymphoma	COSMIC	splenic marginal zone lymphoma	50750		splenic marginal zone lymphoma	SMZL		 smzl splenic marginal zone lymphoma cosmic splenic marginal zone lymphoma splenic marginal zone lymphoma	hematopoeitic	spleen	lymphoma	marginal zone	splenic
+primary central nervous system lymphoma	COSMIC	primary central nervous system lymphoma	NA					 primary central nervous system lymphoma cosmic primary central nervous system lymphoma 	hematopoeitic		lymphoma		
+colorectal carcinoma	COSMIC	colorectal carcinoma	80199		colorectal carcinoma	CRC		 crc colorectal carcinoma cosmic colorectal carcinoma colorectal carcinoma	digestive	﻿colorectal	carcinoma		
+gallbladder carcinoma	COSMIC	gallbladder carcinoma	4948		gallbladder carcinoma			 gallbladder carcinoma cosmic gallbladder carcinoma gallbladder carcinoma	genitourinary	bladder	carcinoma		
+T-CLL	COSMIC	T-CLL	NA			T-CLL		 t cll t cll cosmic t cll 	hematopoeitic	blood	leukemia	t-cell	
+myxoid chondrosarcoma	COSMIC	myxoid chondrosarcoma	5861		myxoid chondrosarcoma	MYCHS		 mychs myxoid chondrosarcoma cosmic myxoid chondrosarcoma myxoid chondrosarcoma	muscolskeletal	cartilage	sarcoma	chondro	myxoid
+intestinal T-cell lymphoma	COSMIC	intestinal T-cell lymphoma	NA					 intestinal t cell lymphoma cosmic intestinal t cell lymphoma 	digestive	intestine	lymphoma		
+adrenocortical	COSMIC	adrenocortical	NA					 adrenocortical cosmic adrenocortical 					
+endometrial stromal sarcoma	COSMIC	endometrial stromal sarcoma	4226		endometrial stromal sarcoma	ESS		 ess endometrial stromal sarcoma cosmic endometrial stromal sarcoma endometrial stromal sarcoma	reproductive	uterus	sarcoma	stromal	
+follicular thyroid adenoma	COSMIC	follicular adenoma	6204		follicular adenoma			 follicular thyroid adenoma cosmic follicular adenoma follicular adenoma	endocrine	thyroid gland			
+large intestine carcinoma	COSMIC	large intestine carcinoma	NA					 large intestine carcinoma cosmic large intestine carcinoma 	digestive	colorectal	carcinoma		
+stomach carcinoma	COSMIC	stomach carcinoma	5517		stomach carcinoma			 stomach carcinoma cosmic stomach carcinoma stomach carcinoma	digestive	stomach	carcinoma		
+pancreatic carcinoma	COSMIC	pancreatic carcinoma	4905		pancreatic carcinoma			 pancreatic carcinoma cosmic pancreatic carcinoma pancreatic carcinoma	digestive	pancreas	carcinoma		
+biliary tract	COSMIC	biliary tract	NA			BILIARY_TRACT		 biliary tract biliary tract cosmic biliary tract 	digestive	biliary tract			
+oesophagus	COSMIC	oesophagus	NA					 oesophagus cosmic oesophagus 	digestive	esophagus			
+CCRCC	COSMIC	clear cell renal cell carcinoma	4467		clear cell renal cell carcinoma	CCRCC		 ccrcc ccrcc cosmic clear cell renal cell carcinoma clear cell renal cell carcinoma	genitourinary	kidney	carcinoma	clear-cell	
+epithelial ovarian	COSMIC	epithelial ovarian	NA					 epithelial ovarian cosmic epithelial ovarian 	reproductive	ovary			
+myeloma	COSMIC	myeloma	70004		myeloid neoplasm	MNM		 mnm myeloma cosmic myeloma myeloid neoplasm	hematopoeitic	bone marrow	myeloma	myeloid	
+pancreatic neuroendocrine tumours	COSMIC	pancreatic neuroendocrine tumor	NA			PANET		 panet pancreatic neuroendocrine tumours cosmic pancreatic neuroendocrine tumor 	endocrine	pancreas			
+paediatric GBM	COSMIC	paediatric GBM	NA					 paediatric gbm cosmic paediatric gbm 	nervous	cns	blastoma	glio	multiforme
+colorectal adenocarcinoma	COSMIC	colorectal adenocarcinoma	50861		colorectal adenocarcinoma	COADREAD		 coadread colorectal adenocarcinoma cosmic colorectal adenocarcinoma colorectal adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+colorectal adenocarcinoma	COSMIC	colorectal adenocarcinoma	50861		colorectal adenocarcinoma	COREAD		 coread colorectal adenocarcinoma cosmic colorectal adenocarcinoma colorectal adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+uveal melanoma	COSMIC	uveal melanoma	6039		uveal melanoma	UM		 um uveal melanoma cosmic uveal melanoma uveal melanoma	visual	eye	melanoma		
+colorectal cancer	COSMIC	colorectal cancer	9256		colorectal cancer			 colorectal cancer cosmic colorectal cancer colorectal cancer					
+endometrial carcinoma	COSMIC	endometrial carcinoma	2871		endometrial carcinoma	UCEC		 ucec endometrial carcinoma cosmic endometrial carcinoma endometrial carcinoma	reproductive	uterus	carcinoma		
+gastric cancer	COSMIC	gastric cancer	10534	C16|C16.2|C16.5|C16.6|C16.9	stomach cancer		c16 c162 c165 c166 c169	c16 c162 c165 c166 c169 gastric cancer cosmic gastric cancer stomach cancer	digestive	stomach			
+hepatocellular	COSMIC	hepatocellular	NA					 hepatocellular cosmic hepatocellular 					
+oral squamous cell	COSMIC	oral squamous cell carcinoma	50866		oral squamous cell carcinoma			 oral squamous cell cosmic oral squamous cell carcinoma oral squamous cell carcinoma		lip, oral cavity and pharynx	carcinoma		
+WM	COSMIC	WM	NA			WM		 wm wm cosmic wm 					
+parathyroid adenoma	COSMIC	parathyroid adenoma	7608		parathyroid adenoma			 parathyroid adenoma cosmic parathyroid adenoma parathyroid adenoma	endocrine	parathyroid gland			
+lobular breast	COSMIC	breast lobular carcinoma	50938		breast lobular carcinoma			 lobular breast cosmic breast lobular carcinoma breast lobular carcinoma	reproductive	breast	carcinoma		
+bladder cancer	COSMIC	bladder cancer	11054	C67|C67.9	urinary bladder cancer		c67 c679	c67 c679 bladder cancer cosmic bladder cancer urinary bladder cancer	genitourinary	bladder			
+small intestine neuroendocrine tumours	COSMIC	small intestine neuroendocrine tumor	4434		small intestine neuroendocrine neoplasm			 small intestine neuroendocrine tumours cosmic small intestine neuroendocrine tumor small intestine neuroendocrine neoplasm	digestive	small intestine			
+large intestine	COSMIC	large intestine	NA					 large intestine cosmic large intestine 	digestive	colorectal			
+monoclonal B lymphocytosis	COSMIC	monoclonal B lymphocytosis	NA					 monoclonal b lymphocytosis cosmic monoclonal b lymphocytosis 					
+uterine serous carcinoma	COSMIC	uterine serous carcinoma	5750		uterine corpus serous adenocarcinoma			 uterine serous carcinoma cosmic uterine serous carcinoma uterine corpus serous adenocarcinoma	reproductive	uterus	carcinoma		
+cylindroma	COSMIC	cylindroma	4866		salivary gland adenoid cystic carcinoma			 cylindroma cosmic cylindroma salivary gland adenoid cystic carcinoma	exocrine	﻿salivary gland	carcinoma	adeno	cyst
+sex cord-stromal tumour	COSMIC	sex cord-stromal tumour	NA					 sex cord stromal tumour cosmic sex cord stromal tumour 					
+TGCT	COSMIC	tenosynovial giant cell tumor	314		tenosynovial giant cell tumor	TGCT		 tgct tgct cosmic tenosynovial giant cell tumor tenosynovial giant cell tumor	muscolskeletal	joint			
+embryonal rhabdomyosarcoma	COSMIC	embryonal rhabdomyosarcoma	3246		embryonal rhabdomyosarcoma	ERMS		 erms embryonal rhabdomyosarcoma cosmic embryonal rhabdomyosarcoma embryonal rhabdomyosarcoma			sarcoma	myo	rhabdo
+pleuropulmonary blastoma	COSMIC	pleuropulmonary blastoma	4769		pleuropulmonary blastoma	PPB		 ppb pleuropulmonary blastoma cosmic pleuropulmonary blastoma pleuropulmonary blastoma	respiratory	lung	blastoma	pleuropulmonary	
+pituitary blastoma	COSMIC	pituitary blastoma	NA					 pituitary blastoma cosmic pituitary blastoma 	endocrine	pituitary gland			
+thyroid cancer	COSMIC	thyroid gland cancer	1781	C73	thyroid gland cancer		c73	c73 thyroid cancer cosmic thyroid gland cancer thyroid gland cancer	endocrine	thyroid gland			
+malignant peripheral nerve sheath tumours	COSMIC	malignant peripheral nerve sheath tumor	5940		malignant peripheral nerve sheath tumor	MPNST		 mpnst malignant peripheral nerve sheath tumours cosmic malignant peripheral nerve sheath tumor malignant peripheral nerve sheath tumor	nervous	nerve	sarcoma		
+MDS and related	COSMIC	MDS and related	NA					 mds and related cosmic mds and related 					
+pancreatic cancer	COSMIC	pancreatic cancer	1793	C25.0|C25.1|C25.2	pancreatic cancer		c250 c251 c252	c250 c251 c252 pancreatic cancer cosmic pancreatic cancer pancreatic cancer	digestive	pancreas			
+chemorefractory CLL	COSMIC	chemorefractory CLL	NA					 chemorefractory cll cosmic chemorefractory cll 	hematopoeitic	blood	leukemia	b-cell	
+head and neck	COSMIC	head and neck cancer	11934		head and neck cancer			 head and neck cosmic head and neck cancer head and neck cancer					
+pancreatic acinar cell carcinoma	COSMIC	pancreatic acinar cell carcinoma	5742		pancreatic acinar cell adenocarcinoma			 pancreatic acinar cell carcinoma cosmic pancreatic acinar cell carcinoma pancreatic acinar cell adenocarcinoma	digestive	pancreas	carcinoma		
+ovarian carcinoma	COSMIC	ovarian carcinoma	4001		ovarian carcinoma			 ovarian carcinoma cosmic ovarian carcinoma ovarian carcinoma			carcinoma		
+megakaryoblastic leukaemia of Downs syndrome	COSMIC	megakaryoblastic leukaemia of Downs syndrome	NA					 megakaryoblastic leukaemia of downs syndrome cosmic megakaryoblastic leukaemia of downs syndrome 					
+gastric carcinoma	COSMIC	gastric carcinoma	5517		stomach carcinoma			 gastric carcinoma cosmic gastric carcinoma stomach carcinoma	digestive	stomach	carcinoma		
+lung carcinoma	COSMIC	lung carcinoma	3905	C34.90	lung carcinoma		c3490	c3490 lung carcinoma cosmic lung carcinoma lung carcinoma	respiratory	lung	carcinoma		
+endometrioid carcinoma	COSMIC	endometrioid carcinoma	2871		endometrial carcinoma	UCEC		 ucec endometrioid carcinoma cosmic endometrioid carcinoma endometrial carcinoma	reproductive	uterus	carcinoma		
+hepatic adenoma	COSMIC	hepatic adenoma	NA					 hepatic adenoma cosmic hepatic adenoma 	digestive	liver	adenoma	hepato	
+breast carcinoma	COSMIC	breast carcinoma	3459		breast carcinoma	BRCA		 brca breast carcinoma cosmic breast carcinoma breast carcinoma	reproductive	breast	carcinoma		
+luminal A breast	COSMIC	luminal A breast	NA					 luminal a breast cosmic luminal a breast 	reproductive	breast			
+colon carcinoma	COSMIC	colon carcinoma	1520		colon carcinoma			 colon carcinoma cosmic colon carcinoma colon carcinoma	digestive	﻿colorectal	carcinoma		
+fibroadenoma	COSMIC	fibroadenoma	1618	D24	breast fibroadenoma	FA	d24	d24 fa fibroadenoma cosmic fibroadenoma breast fibroadenoma	reproductive	breast	adenoma	fibro	
+phyllodes tumour	COSMIC	phyllodes tumour	NA					 phyllodes tumour cosmic phyllodes tumour 					
+desmoplastic melanoma	COSMIC	desmoplastic melanoma	3162		malignant spindle cell melanoma	DESM		 desm desmoplastic melanoma cosmic desmoplastic melanoma malignant spindle cell melanoma	integumentary	skin	melanoma	desmoplastic	
+marginal zone lymphoma	COSMIC	marginal zone lymphoma	50748		marginal zone B-cell lymphoma	MZL		 mzl marginal zone lymphoma cosmic marginal zone lymphoma marginal zone b cell lymphoma	hematopoeitic		lymphoma	marginal zone	
+biliary tract carcinoma	COSMIC	biliary tract carcinoma	NA					 biliary tract carcinoma cosmic biliary tract carcinoma 	digestive	biliary tract	carcinoma		
+ETP ALL	COSMIC	ETP ALL	NA			ETP ALL		 etp all etp all cosmic etp all 					
+colon adenocarcinoma	COSMIC	colon adenocarcinoma	234		colon adenocarcinoma	COAD		 coad colon adenocarcinoma cosmic colon adenocarcinoma colon adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+angiocentric glioma	COSMIC	angiocentric glioma	NA			ANGL		 angl angiocentric glioma cosmic angiocentric glioma 	nervous	cns	glioma	angio	
+carcinoma	COSMIC	carcinoma	305		carcinoma			 carcinoma cosmic carcinoma carcinoma			carcinoma		
+diffuse gastric	COSMIC	gastric diffuse adenocarcinoma	6217		gastric diffuse adenocarcinoma			 diffuse gastric cosmic gastric diffuse adenocarcinoma gastric diffuse adenocarcinoma	digestive	stomach	carcinoma		
+T cell lymphomas	COSMIC	T-cell lymphoma	NA					 t cell lymphomas cosmic t cell lymphoma 	hematopoeitic		lymphoma		
+paediatric Burkitt lymphoma	COSMIC	paediatric Burkitt lymphoma	NA					 paediatric burkitt lymphoma cosmic paediatric burkitt lymphoma 	hematopoeitic		lymphoma	burkitt	
+ovary	COSMIC	ovary	NA					 ovary cosmic ovary 	reproductive	ovary			
+pancreas	COSMIC	pancreas	NA			PANCREAS		 pancreas pancreas cosmic pancreas 	digestive	pancreas			
+prostate cancer	COSMIC	prostate cancer	10283	C61	prostate cancer		c61	c61 prostate cancer cosmic prostate cancer prostate cancer	reproductive	prostate			
+erythrocytosis	COSMIC	erythrocytosis	NA					 erythrocytosis cosmic erythrocytosis 					
+Lung SCC	COSMIC	Lung squamous cell carcinoma	3907		lung squamous cell carcinoma	LUSC		 lusc lung scc cosmic lung squamous cell carcinoma lung squamous cell carcinoma	respiratory	lung	carcinoma	squamous cell	
+SCCOHT	COSMIC	small-cell carcinoma of the ovary of hypercalcemic type	7651		small-cell carcinoma of the ovary of hypercalcemic type	SCCOHT		 sccoht sccoht cosmic small cell carcinoma of the ovary of hypercalcemic type small cell carcinoma of the ovary of hypercalcemic type	reproductive	ovary	carcinoma	small cell	
+SMZL	COSMIC	splenic marginal zone lymphoma	50750		splenic marginal zone lymphoma	SMZL		 smzl smzl cosmic splenic marginal zone lymphoma splenic marginal zone lymphoma	hematopoeitic	spleen	lymphoma	marginal zone	splenic
+Ewing's sarcoma	COSMIC	Ewing sarcoma	3369		Ewing sarcoma	ES		 es ewing s sarcoma cosmic ewing sarcoma ewing sarcoma			sarcoma		
+myeloid neoplasms	COSMIC	myeloid neoplasm	70004		myeloid neoplasm	MNM		 mnm myeloid neoplasms cosmic myeloid neoplasm myeloid neoplasm	hematopoeitic	bone marrow	myeloma	myeloid	
+skin	COSMIC	skin	NA			SKIN		 skin skin cosmic skin 	integumentary	skin			
+mantle cell lymphoma	COSMIC	mantle cell lymphoma	50746		mantle cell lymphoma	MCL		 mcl mantle cell lymphoma cosmic mantle cell lymphoma mantle cell lymphoma	hematopoeitic		lymphoma	mantle cell	
+adrenocortical carcinoma	COSMIC	adrenocortical carcinoma	3948		adrenocortical carcinoma	ACC		 acc adrenocortical carcinoma cosmic adrenocortical carcinoma adrenocortical carcinoma	endocrine	adrenal	carcinoma		
+STAD	IntoGen	Stomach adenocarcinoma	3717		gastric adenocarcinoma	STAD		 stad stad intogen stomach adenocarcinoma gastric adenocarcinoma	digestive	stomach	carcinoma	adeno	
+ESCA	IntoGen	Esophageal carcinoma	1107		esophageal carcinoma	ESCA		 esca esca intogen esophageal carcinoma esophageal carcinoma	digestive	esophagus	carcinoma		
+DLBC	IntoGen	diffuse large B cell lymphoma	NA			DLBC		 dlbc dlbc intogen diffuse large b cell lymphoma 	hematopoeitic		lymphoma	b-cell	large
+PAAD	IntoGen	Pancreatic adenocarcinoma	4074		pancreatic adenocarcinoma	PAAD		 paad paad intogen pancreatic adenocarcinoma pancreatic adenocarcinoma	digestive	pancreas	carcinoma	adeno	
+HC	IntoGen	Hepatocarcinoma	NA			HC		 hc hc intogen hepatocarcinoma 			carcinoma		
+SCLC	IntoGen	Small cell lung carcinoma	5409		lung small cell carcinoma	SCLC		 sclc sclc intogen small cell lung carcinoma lung small cell carcinoma	pulmonary	lung	carcinoma	small cell	
+NB	IntoGen	Neuroblastoma	769		neuroblastoma	NBL		 nbl nb intogen neuroblastoma neuroblastoma	nervous	nerves	blastoma	neuro	
+NB	IntoGen	Neuroblastoma	769		neuroblastoma	NB		 nb nb intogen neuroblastoma neuroblastoma					
+Breast cancer (BC)	Uniprot	Breast cancer	1612		breast cancer			 breast cancer bc uniprot breast cancer breast cancer	reproductive	breast			
+Colorectal cancer (CRC)	Uniprot	Colorectal cancer	9256		colorectal cancer			 colorectal cancer crc uniprot colorectal cancer colorectal cancer	digestive	﻿colorectal	carcinoma		
+Ovarian cancer.	Uniprot	Ovarian cancer	2394		ovarian cancer			 ovarian cancer uniprot ovarian cancer ovarian cancer					
+Cowden syndrome 6 (CWS6)	Uniprot	Cowden syndrome 6	NA					 cowden syndrome 6 cws6 uniprot cowden syndrome 6 					
+	Uniprot		NA					 uniprot 					
+Neuroblastoma 3 (NBLST3)	Uniprot	Neuroblastoma 3	NA					 neuroblastoma 3 nblst3 uniprot neuroblastoma 3 	nervous	nerves	blastoma	neuro	
+Familial adenomatous polyposis (FAP)	Uniprot	Familial adenomatous polyposis	50424		familial adenomatous polyposis			 familial adenomatous polyposis fap uniprot familial adenomatous polyposis familial adenomatous polyposis					
+Hereditary desmoid disease (HDD)	Uniprot	Hereditary desmoid disease	111349		hereditary desmoid disease			 hereditary desmoid disease hdd uniprot hereditary desmoid disease hereditary desmoid disease					
+Medulloblastoma (MDB)	Uniprot	Medulloblastoma	50902		medulloblastoma	MBL		 mbl medulloblastoma mdb uniprot medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+Medulloblastoma (MDB)	Uniprot	Medulloblastoma	50902		medulloblastoma	MB		 mb medulloblastoma mdb uniprot medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+Gastric cancer (GASC)	Uniprot	Gastric cancer	10534	C16|C16.2|C16.5|C16.6|C16.9	stomach cancer		c16 c162 c165 c166 c169	c16 c162 c165 c166 c169 gastric cancer gasc uniprot gastric cancer stomach cancer	digestive	stomach			
+Hepatocellular carcinoma (HCC)	Uniprot	Hepatocellular carcinoma	684		hepatocellular carcinoma	HCC		 hcc hepatocellular carcinoma hcc uniprot hepatocellular carcinoma hepatocellular carcinoma	digestive	liver	carcinoma	hepatocellular	
+Leukemia juvenile myelomonocytic (JMML)	Uniprot	Leukemia juvenile myelomonocytic	50458	C93.3|C93.30	juvenile myelomonocytic leukemia	JMML	c933 c9330	c933 c9330 jmml leukemia juvenile myelomonocytic jmml uniprot leukemia juvenile myelomonocytic juvenile myelomonocytic leukemia	hematopoeitic	blood	leukemia	myelomonocytic	
+MB	IntoGen	Medulloblastoma	50902		medulloblastoma	MBL		 mbl mb intogen medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+MB	IntoGen	Medulloblastoma	50902		medulloblastoma	MB		 mb mb intogen medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+Taxia telangiectasia (AT)	Uniprot	ataxia telangiectasia	12704		ataxia telangiectasia			 taxia telangiectasia at uniprot ataxia telangiectasia ataxia telangiectasia					
+T-cell acute lymphoblastic leukemia (TALL)	Uniprot	T-cell acute lymphoblastic leukemia	5603	C91.5|C91.50	T-cell acute lymphoblastic leukemia		c915 c9150	c915 c9150 t cell acute lymphoblastic leukemia tall uniprot t cell acute lymphoblastic leukemia t cell acute lymphoblastic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+B-cell non-Hodgkin lymphomas (BNHL)	Uniprot	B-cell non-Hodgkin lymphoma	NA			NHL		 nhl b cell non hodgkin lymphomas bnhl uniprot b cell non hodgkin lymphoma 	hematopoeitic	cns	lymphoma	non-hodgkin	oligo
+B-cell chronic lymphocytic leukemia (BCLL)	Uniprot	B-cell chronic lymphocytic leukemia	1040	C91.1|C91.10	chronic lymphocytic leukemia	CLL	c911 c9110	c911 c9110 cll b cell chronic lymphocytic leukemia bcll uniprot b cell chronic lymphocytic leukemia chronic lymphocytic leukemia	hematopoeitic	blood	leukemia	b-cell	
+Mantle cell lymphoma (MCL)	Uniprot	Mantle cell lymphoma	50746		mantle cell lymphoma	MCL		 mcl mantle cell lymphoma mcl uniprot mantle cell lymphoma mantle cell lymphoma	hematopoeitic		lymphoma	mantle cell	
+T-prolymphocytic leukemia (TPLL)	Uniprot	T-prolymphocytic leukemia	NA					 t prolymphocytic leukemia tpll uniprot t prolymphocytic leukemia 	hematopoeitic	blood	leukemia		
+Cancer	Uniprot	Cancer	162		cancer			 cancer uniprot cancer cancer					
+Lung cancer (LNCR)	Uniprot	Lung cancer	1324		lung cancer			 lung cancer lncr uniprot lung cancer lung cancer	respiratory	lung			
+Familial non-Hodgkin lymphoma (NHL)	Uniprot	Familial non-Hodgkin lymphoma	NA					 familial non hodgkin lymphoma nhl uniprot familial non hodgkin lymphoma 	hematopoeitic	cns	lymphoma	non-hodgkin	oligo
+Noonan syndrome 7 (NS7)	Uniprot	Noonan syndrome 7	60585	Q87.1	Noonan syndrome 7		q871	q871 noonan syndrome 7 ns7 uniprot noonan syndrome 7 noonan syndrome 7					
+Breast-ovarian cancer familial 1 (BROVCA1)	Uniprot	Breast-ovarian cancer familial 1	NA					 breast ovarian cancer familial 1 brovca1 uniprot breast ovarian cancer familial 1 	reproductive	breast			
+Ovarian cancer (OC)	Uniprot	Ovarian cancer	2394		ovarian cancer			 ovarian cancer oc uniprot ovarian cancer ovarian cancer					
+Pancreatic cancer 4 (PNCA4)	Uniprot	Pancreatic cancer 4	NA					 pancreatic cancer 4 pnca4 uniprot pancreatic cancer 4 	digestive	pancreas			
+Fanconi anemia complementation group S (FANCS)	Uniprot	Fanconi anemia complementation group S	NA					 fanconi anemia complementation group s fancs uniprot fanconi anemia complementation group s 					
+Pancreatic cancer 2 (PNCA2)	Uniprot	Pancreatic cancer 2	NA					 pancreatic cancer 2 pnca2 uniprot pancreatic cancer 2 	digestive	pancreas			
+Breast-ovarian cancer familial 2 (BROVCA2)	Uniprot	Breast-ovarian cancer familial 2	NA					 breast ovarian cancer familial 2 brovca2 uniprot breast ovarian cancer familial 2 	reproductive	breast			
+Fanconi anemia complementation group D1 (FANCD1)	Uniprot	Fanconi anemia complementation group D1	111089		Fanconi anemia complementation group D1			 fanconi anemia complementation group d1 fancd1 uniprot fanconi anemia complementation group d1 fanconi anemia complementation group d1					
+Glioma 3 (GLM3)	Uniprot	Glioma 3	NA					 glioma 3 glm3 uniprot glioma 3 	nervous	cns	glioma		
+Hyperparathyroidism 1 (HRPT1)	Uniprot	Hyperparathyroidism 1	NA					 hyperparathyroidism 1 hrpt1 uniprot hyperparathyroidism 1 	endocrine	parathyroid gland			
+Hyperparathyroidism 2 with jaw tumors (HRPT2)	Uniprot	Hyperparathyroidism 2 with jaw tumors	NA					 hyperparathyroidism 2 with jaw tumors hrpt2 uniprot hyperparathyroidism 2 with jaw tumors 	endocrine	parathyroid gland			
+Parathyroid carcinoma (PRTC)	Uniprot	Parathyroid carcinoma	1540		parathyroid carcinoma	PTHC		 pthc parathyroid carcinoma prtc uniprot parathyroid carcinoma parathyroid carcinoma	endocrine	parathyroid gland	carcinoma		
+Multiple endocrine neoplasia 4 (MEN4)	Uniprot	Multiple endocrine neoplasia 4	NA					 multiple endocrine neoplasia 4 men4 uniprot multiple endocrine neoplasia 4 	endocrine				
+Melanoma-astrocytoma syndrome (MASTS)	Uniprot	Melanoma-astrocytoma syndrome	111511		melanoma and neural system tumor syndrome			 melanoma astrocytoma syndrome masts uniprot melanoma astrocytoma syndrome melanoma and neural system tumor syndrome	integumentary		melanoma		
+Melanoma cutaneous malignant 2 (CMM2)	Uniprot	Melanoma cutaneous malignant 2	NA					 melanoma cutaneous malignant 2 cmm2 uniprot melanoma cutaneous malignant 2 	integumentary	skin	melanoma		
+Familial atypical multiple mole melanoma-pancreatic carcinoma syndrome (FAMMMPC)	Uniprot	Familial atypical multiple mole melanoma-pancreatic carcinoma syndrome	NA					 familial atypical multiple mole melanoma pancreatic carcinoma syndrome fammmpc uniprot familial atypical multiple mole melanoma pancreatic carcinoma syndrome 	digestive	pancreas	carcinoma		
+Li-Fraumeni syndrome 2 (LFS2)	Uniprot	Li-Fraumeni syndrome 2	111504		Li-Fraumeni syndrome 2			 li fraumeni syndrome 2 lfs2 uniprot li fraumeni syndrome 2 li fraumeni syndrome 2					
+Prostate cancer (PC)	Uniprot	Prostate cancer	10283		prostate cancer			 prostate cancer pc uniprot prostate cancer prostate cancer	reproductive	prostate			
+Osteogenic sarcoma (OSRC)	Uniprot	Osteogenic sarcoma	3347		osteosarcoma	OS		 os osteogenic sarcoma osrc uniprot osteogenic sarcoma osteosarcoma	muscolskeletal	bone	sarcoma	osteo	
+head and neck cancer	COSMIC	head and neck cancer	11934		head and neck cancer			 head and neck cancer cosmic head and neck cancer head and neck cancer					
+Cylindromatosis familial (FCYL)	Uniprot	Cylindromatosis familial	NA					 cylindromatosis familial fcyl uniprot cylindromatosis familial 					
+Multiple familial trichoepithelioma 1 (MFT1)	Uniprot	Multiple familial trichoepithelioma 1	NA					 multiple familial trichoepithelioma 1 mft1 uniprot multiple familial trichoepithelioma 1 					
+Brooke-Spiegler syndrome (BRSS)	Uniprot	Brooke-Spiegler syndrome	50693		Brooke-Spiegler syndrome			 brooke spiegler syndrome brss uniprot brooke spiegler syndrome brooke spiegler syndrome					
+colon	COSMIC	colon	NA					 colon cosmic colon 	digestive	﻿colorectal			
+nasal NK/T lymphoma	COSMIC	nasal NK/T lymphoma	NA					 nasal nk t lymphoma cosmic nasal nk t lymphoma 	hematopoeitic		lymphoma		
+skin squamous cell carcinoma-burn scar related	COSMIC	skin squamous cell carcinoma-burn scar related	NA					 skin squamous cell carcinoma burn scar related cosmic skin squamous cell carcinoma burn scar related 	integumentary	skin	carcinoma		
+Leukemia acute myelogenous (AML)	Uniprot	Leukemia acute myelogenous	9119	C92.0|C92.00	acute myeloid leukemia	AML	c920 c9200	c920 c9200 aml leukemia acute myelogenous aml uniprot leukemia acute myelogenous acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+primary central nervous system melanocytic neoplasms	COSMIC	primary central nervous system melanocytic neoplasm	NA					 primary central nervous system melanocytic neoplasms cosmic primary central nervous system melanocytic neoplasm 	nervous		melanoma		
+pituitary adenoma	COSMIC	pituitary adenoma	3829		pituitary adenoma	PTAD		 ptad pituitary adenoma cosmic pituitary adenoma pituitary adenoma	endocrine	pituitary gland	adenoma		
+pancreatic intraductal papillary mucinous neoplasm	COSMIC	pancreatic intraductal papillary-mucinous neoplasm	7575		pancreatic intraductal papillary-mucinous neoplasm			 pancreatic intraductal papillary mucinous neoplasm cosmic pancreatic intraductal papillary mucinous neoplasm pancreatic intraductal papillary mucinous neoplasm	digestive	pancreas			
+fibrous dysplasia	COSMIC	fibrous dysplasia	80031		fibrous dysplasia			 fibrous dysplasia cosmic fibrous dysplasia fibrous dysplasia					
+ACTH-independent macronodular adrenal hyperplasia 1 (AIMAH1)	Uniprot	ACTH-independent macronodular adrenal hyperplasia 1	111623		ACTH-independent macronodular adrenal hyperplasia 1			 acth independent macronodular adrenal hyperplasia 1 aimah1 uniprot acth independent macronodular adrenal hyperplasia 1 acth independent macronodular adrenal hyperplasia 1	endocrine	adrenal			
+infrequent sarcomas	COSMIC	infrequent sarcomas	NA					 infrequent sarcomas cosmic infrequent sarcomas 			sarcoma		
+rare other tumour types	COSMIC	rare other tumour types	NA					 rare other tumour types cosmic rare other tumour types 					
+Costello syndrome (CSTLO)	Uniprot	Costello syndrome	50469		Costello syndrome			 costello syndrome cstlo uniprot costello syndrome costello syndrome					
+Thyroid cancer non-medullary 2 (NMTC2)	Uniprot	Thyroid cancer non-medullary 2	NA					 thyroid cancer non medullary 2 nmtc2 uniprot thyroid cancer non medullary 2 	endocrine	thyroid gland			
+Schimmelpenning-Feuerstein-Mims syndrome (SFM)	Uniprot	linear nevus sebaceous syndrome	111530		linear nevus sebaceous syndrome			 schimmelpenning feuerstein mims syndrome sfm uniprot linear nevus sebaceous syndrome linear nevus sebaceous syndrome	exocrine	sebaceous gland	melanoma		
+Bladder cancer (BLC)	Uniprot	Bladder cancer	11054	C67|C67.9	urinary bladder cancer		c67 c679	c67 c679 bladder cancer blc uniprot bladder cancer urinary bladder cancer	genitourinary	bladder			
+quamous cell carcinoma of the head and neck (HNSCC)	Uniprot	squamous cell carcinoma of the head and neck	5520		head and neck squamous cell carcinoma	HNSC		 hnsc quamous cell carcinoma of the head and neck hnscc uniprot squamous cell carcinoma of the head and neck head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+quamous cell carcinoma of the head and neck (HNSCC)	Uniprot	squamous cell carcinoma of the head and neck	5520		head and neck squamous cell carcinoma	HNSCC		 hnscc quamous cell carcinoma of the head and neck hnscc uniprot squamous cell carcinoma of the head and neck head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+mastocytosis	COSMIC	mastocytosis	350	D47.09|D89.40|Q82.2	mastocytosis	MCD	d4709 d8940 q822	d4709 d8940 q822 mcd mastocytosis cosmic mastocytosis mastocytosis	immune		mastocytosis		
+mucosal melanoma	COSMIC	mucosal melanoma	50929		mucosal melanoma			 mucosal melanoma cosmic mucosal melanoma mucosal melanoma	integumentary		melanoma		
+Mastocytosis systemic (MASTSYS)	Uniprot	Mastocytosis systemic	349	D47.02	systemic mastocytosis	SM	d4702	d4702 sm mastocytosis systemic mastsys uniprot mastocytosis systemic systemic mastocytosis	immune		mastocytosis		
+Gastrointestinal stromal tumor (GIST)	Uniprot	Gastrointestinal stromal tumor	9253		gastrointestinal stromal tumor	GIST		 gist gastrointestinal stromal tumor gist uniprot gastrointestinal stromal tumor gastrointestinal stromal tumor	digestive	intestine	gist		
+Testicular germ cell tumor (TGCT)	Uniprot	Testicular germ cell tumor	NA					 testicular germ cell tumor tgct uniprot testicular germ cell tumor 	muscolskeletal	joint			
+thyroid	COSMIC	thyroid	NA			THYROID		 thyroid thyroid cosmic thyroid 	endocrine	thyroid gland			
+Noonan syndrome 3 (NS3)	Uniprot	Noonan syndrome 3	60581	Q87.1	Noonan syndrome 3		q871	q871 noonan syndrome 3 ns3 uniprot noonan syndrome 3 noonan syndrome 3					
+Pylocytic astrocytoma (PA).	Uniprot	Pylocytic astrocytoma	NA			PA		 pa pylocytic astrocytoma pa uniprot pylocytic astrocytoma 					
+head-neck squamous cell	COSMIC	head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSC		 hnsc head neck squamous cell cosmic head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+head-neck squamous cell	COSMIC	head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSCC		 hnscc head neck squamous cell cosmic head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+Cancer of unknown primary origin (CUP)	Uniprot	Cancer of unknown primary origin	NA					 cancer of unknown primary origin cup uniprot cancer of unknown primary origin 					
+Gastric cancer	Uniprot	Gastric cancer	10534	C16|C16.2|C16.5|C16.6|C16.9	stomach cancer		c16 c162 c165 c166 c169	c16 c162 c165 c166 c169 gastric cancer uniprot gastric cancer stomach cancer	digestive	stomach			
+Renal cell carcinoma papillary (RCCP)	Uniprot	Renal cell carcinoma papillary	4465		papillary renal cell carcinoma	PRCC		 prcc renal cell carcinoma papillary rccp uniprot renal cell carcinoma papillary papillary renal cell carcinoma	genitourinary	kidney	carcinoma	renal cell	papillary
+Primary occult malignancy	Uniprot	Primary occult malignancy	NA					 primary occult malignancy uniprot primary occult malignancy 					
+Hereditary non-polyposis colorectal cancer 2 (HNPCC2)	Uniprot	Hereditary non-polyposis colorectal cancer 2	NA					 hereditary non polyposis colorectal cancer 2 hnpcc2 uniprot hereditary non polyposis colorectal cancer 2 					
+Mismatch repair cancer syndrome (MMRCS)	Uniprot	Mismatch repair cancer syndrome	NA					 mismatch repair cancer syndrome mmrcs uniprot mismatch repair cancer syndrome 					
+Muir-Torre syndrome (MRTES)	Uniprot	Muir-Torre syndrome	50465		Muir-Torre syndrome			 muir torre syndrome mrtes uniprot muir torre syndrome muir torre syndrome				rhabdo	
+lobular carcinoma in situ (LCIS)	Uniprot	lobular carcinoma in situ	3010		lobular neoplasia			 lobular carcinoma in situ lcis uniprot lobular carcinoma in situ lobular neoplasia			carcinoma		
+Endometrial cancer (ENDMC)	Uniprot	Endometrial cancer	1380		endometrial cancer			 endometrial cancer endmc uniprot endometrial cancer endometrial cancer					
+clear cell renal cell carcinoma	COSMIC	clear cell renal cell carcinoma	4467		clear cell renal cell carcinoma	CCRCC		 ccrcc clear cell renal cell carcinoma cosmic clear cell renal cell carcinoma clear cell renal cell carcinoma	genitourinary	kidney	carcinoma	clear-cell	
+anaplastic thyroid cancer	COSMIC	thyroid gland anaplastic carcinoma	80522		thyroid gland anaplastic carcinoma			 anaplastic thyroid cancer cosmic thyroid gland anaplastic carcinoma thyroid gland anaplastic carcinoma	endocrine	thyroid gland	carcinoma	promyelocytic	
+urothelial cell carcinoma	COSMIC	urothelial cell carcinoma	2671		transitional cell carcinoma			 urothelial cell carcinoma cosmic urothelial cell carcinoma transitional cell carcinoma			carcinoma		
+central nervous system tumours	COSMIC	central nervous system tumor	3620	C72.9	central nervous system cancer		c729	c729 central nervous system tumours cosmic central nervous system tumor central nervous system cancer	nervous	cns			
+testicular germ cell tumours and other tumour types	COSMIC	testicular germ cell tumor and other tumour types	NA					 testicular germ cell tumours and other tumour types cosmic testicular germ cell tumor and other tumour types 					
+ABC-DLBCL	COSMIC	ABC-DLBCL	NA			ABC-DLBCL		 abc dlbcl abc dlbcl cosmic abc dlbcl 	hematopoeitic		lymphoma	b-cell	large
+Neurofibromatosis 1 (NF1)	Uniprot	Neurofibromatosis 1	111253		neurofibromatosis 1			 neurofibromatosis 1 nf1 uniprot neurofibromatosis 1 neurofibromatosis 1	nervous	cns	fibroma	neuro	
+Familial spinal neurofibromatosis (FSNF)	Uniprot	Familial spinal neurofibromatosis	111253		neurofibromatosis 1			 familial spinal neurofibromatosis fsnf uniprot familial spinal neurofibromatosis neurofibromatosis 1	nervous	cns	fibroma	neuro	
+Neurofibromatosis 2 (NF2)	Uniprot	Neurofibromatosis 2	111252		neurofibromatosis 2			 neurofibromatosis 2 nf2 uniprot neurofibromatosis 2 neurofibromatosis 2	nervous	cns	fibroma	neuro	
+Schwannomatosis 1 (SWNTS1)	Uniprot	Schwannomatosis 1	NA					 schwannomatosis 1 swnts1 uniprot schwannomatosis 1 	nervous	nerve	schwannoma		
+Mesothelioma malignant (MESOM)	Uniprot	Mesothelioma malignant	1790		malignant mesothelioma			 mesothelioma malignant mesom uniprot mesothelioma malignant malignant mesothelioma	respiratory	mesothelium	mesothelioma		
+Acute myelogenous leukemia (AML)	Uniprot	Acute myelogenous leukemia	9119	C92.0|C92.00	acute myeloid leukemia	AML	c920 c9200	c920 c9200 aml acute myelogenous leukemia aml uniprot acute myelogenous leukemia acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+Noonan syndrome 6 (NS6)	Uniprot	Noonan syndrome 6	60584	Q87.1	Noonan syndrome 6		q871	q871 noonan syndrome 6 ns6 uniprot noonan syndrome 6 noonan syndrome 6					
+RAS-associated autoimmune leukoproliferative disorder (RALD)	Uniprot	RAS-associated autoimmune leukoproliferative disorder	110117	D72.8	autoimmune lymphoproliferative syndrome type 4		d728	d728 ras associated autoimmune leukoproliferative disorder rald uniprot ras associated autoimmune leukoproliferative disorder autoimmune lymphoproliferative syndrome type 4	hematopoeitic				
+Melanocytic nevus syndrome congenital (CMNS)	Uniprot	Melanocytic nevus syndrome congenital	NA					 melanocytic nevus syndrome congenital cmns uniprot melanocytic nevus syndrome congenital 	integumentary		melanoma		
+Melanosis neurocutaneous (NCMS)	Uniprot	Melanosis neurocutaneous	NA					 melanosis neurocutaneous ncms uniprot melanosis neurocutaneous 	integumentary	skin	melanoma		
+Keratinocytic non-epidermolytic nevus (KNEN)	Uniprot	epidermal nevus	111162		epidermal nevus			 keratinocytic non epidermolytic nevus knen uniprot epidermal nevus epidermal nevus					
+Beckwith-Wiedemann syndrome (BWS)	Uniprot	Beckwith-Wiedemann syndrome	5572	Q87.3	Beckwith-Wiedemann syndrome		q873	q873 beckwith wiedemann syndrome bws uniprot beckwith wiedemann syndrome beckwith wiedemann syndrome					
+Leukemia acute lymphoblastic 3 (ALL3)	Uniprot	Leukemia acute lymphoblastic 3	NA					 leukemia acute lymphoblastic 3 all3 uniprot leukemia acute lymphoblastic 3 	hematopoeitic	blood	leukemia		
+Renal cell carcinoma (RCC)	Uniprot	Renal cell carcinoma	4450		renal cell carcinoma	RCC		 rcc renal cell carcinoma rcc uniprot renal cell carcinoma renal cell carcinoma	genitourinary	kidney	carcinoma	renal cell	
+Keratosis seborrheic (KERSEB)	Uniprot	Keratosis seborrheic	6498	L82|L82.1	seborrheic keratosis		l82 l821	l82 l821 keratosis seborrheic kerseb uniprot keratosis seborrheic seborrheic keratosis					
+Cowden syndrome 5 (CWS5)	Uniprot	Cowden syndrome 5	NA					 cowden syndrome 5 cws5 uniprot cowden syndrome 5 					
+SCC	COSMIC	SCC	NA			SCC		 scc scc cosmic scc 			carcinoma	small cell	
+Basal cell nevus syndrome (BCNS)	Uniprot	Basal cell nevus syndrome	2512		nevoid basal cell carcinoma syndrome			 basal cell nevus syndrome bcns uniprot basal cell nevus syndrome nevoid basal cell carcinoma syndrome	integumentary	skin	carcinoma	basal cell	
+Basal cell carcinoma (BCC)	Uniprot	Basal cell carcinoma	2513		basal cell carcinoma	BCC		 bcc basal cell carcinoma bcc uniprot basal cell carcinoma basal cell carcinoma	integumentary	skin	carcinoma	basal cell	
+Cowden syndrome 1 (CWS1)	Uniprot	Cowden syndrome 1	NA					 cowden syndrome 1 cws1 uniprot cowden syndrome 1 					
+Lhermitte-Duclos disease (LDD)	Uniprot	Lhermitte-Duclos disease	6457		Cowden syndrome			 lhermitte duclos disease ldd uniprot lhermitte duclos disease cowden syndrome					
+Squamous cell carcinoma of the head and neck (HNSCC)	Uniprot	Ssquamous cell carcinoma of the head and neck	NA					 squamous cell carcinoma of the head and neck hnscc uniprot ssquamous cell carcinoma of the head and neck 		head and neck	carcinoma	squamous cell	
+Proteus syndrome	Uniprot	Proteus syndrome	13482		Proteus syndrome			 proteus syndrome uniprot proteus syndrome proteus syndrome					
+Glioma 2 (GLM2)	Uniprot	Glioma 2	NA					 glioma 2 glm2 uniprot glioma 2 	nervous	cns	glioma		
+Basal cell carcinomas	Uniprot	Basal cell carcinoma	2513		basal cell carcinoma	BCC		 bcc basal cell carcinomas uniprot basal cell carcinoma basal cell carcinoma	integumentary	skin	carcinoma	basal cell	
+Childhood cancer retinoblastoma (RB)	Uniprot	Childhood cancer retinoblastoma	NA					 childhood cancer retinoblastoma rb uniprot childhood cancer retinoblastoma 	visual	eye	blastoma	retino	
+Familial platelet disorder with associated myeloid malignancy (FPDMM)	Uniprot	Familial platelet disorder with associated myeloid malignancy	NA					 familial platelet disorder with associated myeloid malignancy fpdmm uniprot familial platelet disorder with associated myeloid malignancy 				myeloid	
+Leukemia acute lymphoblastic (ALL)	Uniprot	Leukemia acute lymphoblastic	9952	C91.0|C91.00	acute lymphocytic leukemia		c910 c9100	c910 c9100 leukemia acute lymphoblastic all uniprot leukemia acute lymphoblastic acute lymphocytic leukemia	hematopoeitic	blood	leukemia	lymphoblastic	
+myelodysplastic syndrome	COSMIC	myelodysplastic syndrome	50908		myelodysplastic syndrome			 myelodysplastic syndrome cosmic myelodysplastic syndrome myelodysplastic syndrome					
+Rhabdoid tumor predisposition syndrome 1 (RTPS1)	Uniprot	Rhabdoid tumor predisposition syndrome 1	NA					 rhabdoid tumor predisposition syndrome 1 rtps1 uniprot rhabdoid tumor predisposition syndrome 1 				rhabdo	
+Peutz-Jeghers syndrome (PJS)	Uniprot	Peutz-Jeghers syndrome	3852	Q85.8	Peutz-Jeghers syndrome		q858	q858 peutz jeghers syndrome pjs uniprot peutz jeghers syndrome peutz jeghers syndrome					
+non-small cell lung cancer (NSCLC) and lung cancer	Uniprot	non-small cell lung cancer and lung cancer	NA					 non small cell lung cancer nsclc and lung cancer uniprot non small cell lung cancer and lung cancer 	respiratory	lung	carcinoma	non-small cell	
+Myeloproliferative disorders (MPD)	Uniprot	Myeloproliferative disorders	NA					 myeloproliferative disorders mpd uniprot myeloproliferative disorders 	hematopoeitic				
+Myeloproliferative neoplasms (MPN)	Uniprot	Myeloproliferative neoplasm	2226		myeloproliferative neoplasm	MPN		 mpn myeloproliferative neoplasms mpn uniprot myeloproliferative neoplasm myeloproliferative neoplasm	hematopoeitic				
+Essential thrombocythemia	Uniprot	Essential thrombocythemia	2224		essential thrombocythemia	ET		 et essential thrombocythemia uniprot essential thrombocythemia essential thrombocythemia	hematopoeitic	blood			
+Polycythemia vera	Uniprot	Polycythemia vera	8997		polycythemia vera	PV		 pv polycythemia vera uniprot polycythemia vera polycythemia vera					
+Primary myelofibrosis	Uniprot	Primary myelofibrosis	4971	D47.4|D75.81	myelofibrosis	PMF	d474 d7581	d474 d7581 pmf primary myelofibrosis uniprot primary myelofibrosis myelofibrosis	muscolskeletal	bone	fibrosis	myelo	osteo
+Barrett metaplasia	Uniprot	Barrett metaplasia	NA					 barrett metaplasia uniprot barrett metaplasia 	hematopoeitic	blood	leukemia	promyelocytic	
+Esophageal cancer (ESCR)	Uniprot	Esophageal cancer	5041		esophageal cancer			 esophageal cancer escr uniprot esophageal cancer esophageal cancer					
+Li-Fraumeni syndrome (LFS)	Uniprot	Li-Fraumeni syndrome	3012		Li-Fraumeni syndrome			 li fraumeni syndrome lfs uniprot li fraumeni syndrome li fraumeni syndrome					
+Papilloma of choroid plexus (CPP)	Uniprot	Papilloma of choroid plexus	NA					 papilloma of choroid plexus cpp uniprot papilloma of choroid plexus 					
+Adrenocortical carcinoma (ADCC)	Uniprot	Adrenocortical carcinoma	3948		adrenocortical carcinoma	ACC		 acc adrenocortical carcinoma adcc uniprot adrenocortical carcinoma adrenocortical carcinoma	endocrine	adrenal	carcinoma		
+Basal cell carcinoma 7 (BCC7)	Uniprot	Basal cell carcinoma 7	NA					 basal cell carcinoma 7 bcc7 uniprot basal cell carcinoma 7 	integumentary	skin	carcinoma	basal cell	
+Tuberous sclerosis 1 (TSC1)	Uniprot	Tuberous sclerosis 1	80324		tuberous sclerosis 1			 tuberous sclerosis 1 tsc1 uniprot tuberous sclerosis 1 tuberous sclerosis 1					
+Pheochromocytoma (PCC)	Uniprot	Pheochromocytoma	50771		pheochromocytoma	PHC		 phc pheochromocytoma pcc uniprot pheochromocytoma pheochromocytoma	endocrine	adrenal	pheochromocytoma		
+von Hippel-Lindau disease (VHLD)	Uniprot	von Hippel-Lindau disease	14175	Q85.8	von Hippel-Lindau disease		q858	q858 von hippel lindau disease vhld uniprot von hippel lindau disease von hippel lindau disease					
+Frasier syndrome (FS)	Uniprot	Frasier syndrome	50438		Frasier syndrome			 frasier syndrome fs uniprot frasier syndrome frasier syndrome					
+Wilms tumor 1 (WT1)	Uniprot	Wilms tumor 1	NA					 wilms tumor 1 wt1 uniprot wilms tumor 1 					
+Denys-Drash syndrome (DDS)	Uniprot	Denys-Drash syndrome	3764		Denys-Drash syndrome			 denys drash syndrome dds uniprot denys drash syndrome denys drash syndrome					
+Nephrotic syndrome 4 (NPHS4)	Uniprot	Nephrotic syndrome 4	NA					 nephrotic syndrome 4 nphs4 uniprot nephrotic syndrome 4 					
+Leukemia chronic myeloid (CML)	Uniprot	Leukemia chronic myeloid	8552		chronic myeloid leukemia			 leukemia chronic myeloid cml uniprot leukemia chronic myeloid chronic myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+hemangioblastoma	COSMIC	hemangioblastoma	5241		hemangioblastoma	HMBL		 hmbl hemangioblastoma cosmic hemangioblastoma hemangioblastoma	nervous	cns	blastoma	hemangio	
+Breast cancer	Uniprot	Breast cancer	1612		breast cancer			 breast cancer uniprot breast cancer breast cancer	reproductive	breast			
+Overian cancer	Uniprot	Ovarian cancer	2394		ovarian cancer			 overian cancer uniprot ovarian cancer ovarian cancer					
+Prostate cancer	Uniprot	Prostate cancer	10283		prostate cancer			 prostate cancer uniprot prostate cancer prostate cancer	reproductive	prostate			
+Endometrial cancer	Uniprot	Endometrial cancer	1380		endometrial cancer			 endometrial cancer uniprot endometrial cancer endometrial cancer					
+granulosa-cell tumour of the ovary	COSMIC	granulosa-cell tumour of the ovary	NA					 granulosa cell tumour of the ovary cosmic granulosa cell tumour of the ovary 	reproductive	ovary			
+AML (CML blast transformation)	COSMIC	AML	NA					 aml cml blast transformation cosmic aml 					
+Hereditary non-polyposis colorectal cancer 1 (HNPCC1)	Uniprot	Hereditary non-polyposis colorectal cancer 1	NA					 hereditary non polyposis colorectal cancer 1 hnpcc1 uniprot hereditary non polyposis colorectal cancer 1 					
+Multiple neoplasia 2A (MEN2A)	Uniprot	multiple endocrine neoplasia type 2A	50430	E31.22	multiple endocrine neoplasia type 2A		e3122	e3122 multiple neoplasia 2a men2a uniprot multiple endocrine neoplasia type 2a multiple endocrine neoplasia type 2a	endocrine				
+Medullary thyroid carcinoma (MTC)	Uniprot	Medullary thyroid carcinoma	3973		thyroid gland medullary carcinoma			 medullary thyroid carcinoma mtc uniprot medullary thyroid carcinoma thyroid gland medullary carcinoma	endocrine	thyroid gland	carcinoma		
+Multiple neoplasia 2B (MEN2B)	Uniprot	multiple endocrine neoplasia type 2B	10016	E31.23	multiple endocrine neoplasia type 2B		e3123	e3123 multiple neoplasia 2b men2b uniprot multiple endocrine neoplasia type 2b multiple endocrine neoplasia type 2b	endocrine				
+toxic thyroid adenoma	COSMIC	toxic thyroid adenoma	NA					 toxic thyroid adenoma cosmic toxic thyroid adenoma 	endocrine	thyroid gland			
+DIPG	COSMIC	DIPG	NA			DIPG		 dipg dipg cosmic dipg 					
+Langerhans cell histiocytosis	COSMIC	Langerhans-cell histiocytosis	2571	C96.0|C96.5|C96.6	Langerhans-cell histiocytosis		c960 c965 c966	c960 c965 c966 langerhans cell histiocytosis cosmic langerhans cell histiocytosis langerhans cell histiocytosis	immune		histiocytosis	langerhans	
+adrenal aldosterone producing adenoma	COSMIC	adrenal aldosterone producing adenoma	NA					 adrenal aldosterone producing adenoma cosmic adrenal aldosterone producing adenoma 	endocrine	adrenal			
+adult T-cell leukaemia/lymphoma	COSMIC	adult T-cell leukaemia/lymphoma	NA					 adult t cell leukaemia lymphoma cosmic adult t cell leukaemia lymphoma 	hematopoeitic		lymphoma		
+CNL	COSMIC	chronic neutrophilic leukemia	80187		chronic neutrophilic leukemia	CNL		 cnl cnl cosmic chronic neutrophilic leukemia chronic neutrophilic leukemia	hematopoeitic	blood	leukemia	neutrophilic	
+leukaemia lymphoma and MDS associated with severe congenital neutropenia	COSMIC	leukaemia lymphoma and MDS associated with severe congenital neutropenia	NA					 leukaemia lymphoma and mds associated with severe congenital neutropenia cosmic leukaemia lymphoma and mds associated with severe congenital neutropenia 	hematopoeitic		lymphoma		
+de novo AML	COSMIC	de novo AML	NA					 de novo aml cosmic de novo aml 					
+prostae adenocarcinoma	COSMIC	prostae adenocarcinoma	NA					 prostae adenocarcinoma cosmic prostae adenocarcinoma 			carcinoma		
+squamous cell carcinoma	COSMIC	squamous cell carcinoma	1749		squamous cell carcinoma			 squamous cell carcinoma cosmic squamous cell carcinoma squamous cell carcinoma			carcinoma		
+paraganglioma	COSMIC	paraganglioma	50773		paraganglioma	PGNG		 pgng paraganglioma cosmic paraganglioma paraganglioma	nervous	cns	glioma	para	
+central nervous system hemangioblastomas	COSMIC	central nervous system hemangioblastomas	NA					 central nervous system hemangioblastomas cosmic central nervous system hemangioblastomas 	nervous				
+SM-AHD	COSMIC	SM-AHD	NA			SM-AHD		 sm ahd sm ahd cosmic sm ahd 					
+HES	COSMIC	hypereosinophilic syndrome	999	D72.1	hypereosinophilic syndrome	HES	d721	d721 hes hes cosmic hypereosinophilic syndrome hypereosinophilic syndrome	immune				
+Renal carcinoma	Uniprot	Renal carcinoma	4451		renal carcinoma			 renal carcinoma uniprot renal carcinoma renal carcinoma	genitourinary	kidney	carcinoma		
+Colon cancer	Uniprot	Colon cancer	219		colon cancer			 colon cancer uniprot colon cancer colon cancer	digestive	﻿colorectal			
+Melanoma	Uniprot	Melanoma	1909		melanoma	MEL		 mel melanoma uniprot melanoma melanoma	integumentary		melanoma		
+Colorectal cancer	Uniprot	Colorectal cancer	9256		colorectal cancer			 colorectal cancer uniprot colorectal cancer colorectal cancer					
+Acute myeloid leukemia	Uniprot	Acute myeloid leukemia	9119		acute myeloid leukemia	AML		 aml acute myeloid leukemia uniprot acute myeloid leukemia acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+adrenal adenoma	COSMIC	adrenal adenoma	656		adrenal adenoma			 adrenal adenoma cosmic adrenal adenoma adrenal adenoma	endocrine	adrenal			
+skin basal cell carcinoma	COSMIC	skin basal cell carcinoma	NA					 skin basal cell carcinoma cosmic skin basal cell carcinoma 	integumentary	skin	carcinoma	basal cell	
+eyelid sebaceous carcinoma	COSMIC	eyelid sebaceous carcinoma	NA					 eyelid sebaceous carcinoma cosmic eyelid sebaceous carcinoma 	exocrine	sebaceous gland	carcinoma		
+lymphomas	COSMIC	lymphoma	60058	C85.9	lymphoma		c859	c859 lymphomas cosmic lymphoma lymphoma	hematopoeitic		lymphoma	non-hodgkin	
+liver	COSMIC	liver	NA			LIVER		 liver liver cosmic liver 	digestive	liver			
+ovarian mixed germ cell tumour	COSMIC	ovarian mixed germ cell tumour	NA					 ovarian mixed germ cell tumour cosmic ovarian mixed germ cell tumour 					
+cervical carcinoma	COSMIC	cervical carcinoma	NA					 cervical carcinoma cosmic cervical carcinoma 			carcinoma		
+relapse ALL	COSMIC	relapse ALL	NA					 relapse all cosmic relapse all 					
+skin cancer	COSMIC	skin cancer	4159		skin cancer			 skin cancer cosmic skin cancer skin cancer	integumentary	skin			
+pancreatic ductal adenocarcinoma	COSMIC	pancreatic ductal adenocarcinoma	3498		pancreatic ductal adenocarcinoma			 pancreatic ductal adenocarcinoma cosmic pancreatic ductal adenocarcinoma pancreatic ductal adenocarcinoma	digestive	pancreas	carcinoma		
+fibrolamellar hepatocellular carcinoma	COSMIC	fibrolamellar hepatocellular carcinoma	5015		fibrolamellar carcinoma	FLC		 flc fibrolamellar hepatocellular carcinoma cosmic fibrolamellar hepatocellular carcinoma fibrolamellar carcinoma	digestive	liver	carcinoma	hepatocellular	fibrolamellar
+cortisol secreting adrenal adenoma	COSMIC	cortisol secreting adrenal adenoma	NA					 cortisol secreting adrenal adenoma cosmic cortisol secreting adrenal adenoma 	endocrine	adrenal			
+others	COSMIC	others	NA					 others cosmic others 					
+peritoneal carcinomatosis	COSMIC	peritoneal carcinomatosis	NA					 peritoneal carcinomatosis cosmic peritoneal carcinomatosis 			carcinoma		
+Paragangliomas 5 (PGL5)	Uniprot	Paragangliomas 5	NA					 paragangliomas 5 pgl5 uniprot paragangliomas 5 	nervous	cns	glioma	angio	
+Nodular lymphocyte predominant Hodgkin lymphoma	COSMIC	Nodular lymphocyte predominant Hodgkin lymphoma	NA					 nodular lymphocyte predominant hodgkin lymphoma cosmic nodular lymphocyte predominant hodgkin lymphoma 	hematopoeitic	cns	lymphoma	hodgkin	oligo
+oral squamous cell carcinoma	COSMIC	oral squamous cell carcinoma	50866		oral squamous cell carcinoma			 oral squamous cell carcinoma cosmic oral squamous cell carcinoma oral squamous cell carcinoma		lip, oral cavity and pharynx	carcinoma		
+T-cell large granular lymphocytic leukaemia	COSMIC	T-cell large granular lymphocyte leukemia	50751		T-cell large granular lymphocyte leukemia			 t cell large granular lymphocytic leukaemia cosmic t cell large granular lymphocyte leukemia t cell large granular lymphocyte leukemia	hematopoeitic	blood	leukemia		
+skin squamous cell	COSMIC	skin squamous cell	NA					 skin squamous cell cosmic skin squamous cell 	integumentary	skin			
+Tuberous sclerosis 2 (TSC2)	Uniprot	Tuberous sclerosis 2	80325		tuberous sclerosis 2			 tuberous sclerosis 2 tsc2 uniprot tuberous sclerosis 2 tuberous sclerosis 2					
+corticotroph adenoma	COSMIC	corticotroph adenoma	7004		ACTH-secreting pituitary adenoma			 corticotroph adenoma cosmic corticotroph adenoma acth secreting pituitary adenoma	endocrine	pituitary gland	adenoma		
+Thyroid carcinoma	Uniprot	thyroid gland carcinoma	3963		thyroid gland carcinoma			 thyroid carcinoma uniprot thyroid gland carcinoma thyroid gland carcinoma	endocrine	thyroid gland	carcinoma		
+Prostatic carcinoma	Uniprot	Prostatic carcinoma	NA					 prostatic carcinoma uniprot prostatic carcinoma 			carcinoma		
+Myeloproliferative disorders	Uniprot	Myeloproliferative disorders	NA					 myeloproliferative disorders uniprot myeloproliferative disorders 	hematopoeitic				
+Lymphoma mucosa-associated lymphoid type (MALTOMA)	Uniprot	Lymphoma mucosa-associated lymphoid type	NA					 lymphoma mucosa associated lymphoid type maltoma uniprot lymphoma mucosa associated lymphoid type 	hematopoeitic		lymphoma	malt	
+tumor formation	Uniprot	tumor formation	NA					 tumor formation uniprot tumor formation 					
+Mosaic variegated aneuploidy syndrome 1 (MVA1)	Uniprot	Mosaic variegated aneuploidy syndrome 1	80141		mosaic variegated aneuploidy syndrome 1			 mosaic variegated aneuploidy syndrome 1 mva1 uniprot mosaic variegated aneuploidy syndrome 1 mosaic variegated aneuploidy syndrome 1					
+Perlman syndrome (PRLMNS)	Uniprot	Perlman syndrome	60476	Q87.3	Perlman syndrome		q873	q873 perlman syndrome prlmns uniprot perlman syndrome perlman syndrome					
+Renal cancer	Uniprot	Renal cancer	263	C64	kidney cancer		c64	c64 renal cancer uniprot renal cancer kidney cancer	genitourinary	kidney			
+Glioma (GLM)	Uniprot	Glioma	NA					 glioma glm uniprot glioma 	nervous	cns	glioma		
+Prostate cancer hereditary 2 (HPC2)	Uniprot	Prostate cancer hereditary 2	NA					 prostate cancer hereditary 2 hpc2 uniprot prostate cancer hereditary 2 	reproductive	prostate			
+Thrombocytopenia 5 (THC5)	Uniprot	Thrombocytopenia 5	NA					 thrombocytopenia 5 thc5 uniprot thrombocytopenia 5 					
+Hereditary multiple exostoses 1 (EXT1)	Uniprot	Hereditary multiple exostoses 1	206	Q78.6	hereditary multiple exostoses		q786	q786 hereditary multiple exostoses 1 ext1 uniprot hereditary multiple exostoses 1 hereditary multiple exostoses					
+Chondrosarcoma (CHDSA)	Uniprot	Chondrosarcoma	3371		chondrosarcoma	CHS		 chs chondrosarcoma chdsa uniprot chondrosarcoma chondrosarcoma	muscolskeletal	cartilage	sarcoma	chondro	
+Hereditary multiple exostoses 2 (EXT2)	Uniprot	Hereditary multiple exostoses 2	206	Q78.6	hereditary multiple exostoses		q786	q786 hereditary multiple exostoses 2 ext2 uniprot hereditary multiple exostoses 2 hereditary multiple exostoses					
+Hereditary leiomyomatosis and renal cell cancer (HLRCC)	Uniprot	Hereditary leiomyomatosis and renal cell cancer	NA					 hereditary leiomyomatosis and renal cell cancer hlrcc uniprot hereditary leiomyomatosis and renal cell cancer 	genitourinary	kidney	myoma	leio	
+Birt-Hogg-Dube syndrome (BHD)	Uniprot	Birt-Hogg-Dube syndrome	50676		Birt-Hogg-Dube syndrome			 birt hogg dube syndrome bhd uniprot birt hogg dube syndrome birt hogg dube syndrome					
+Bleeding disorder platelet-type 17 (BDPLT17)	Uniprot	Bleeding disorder platelet-type 17	111049	D69.1	platelet-type bleeding disorder 17		d691	d691 bleeding disorder platelet type 17 bdplt17 uniprot bleeding disorder platelet type 17 platelet type bleeding disorder 17					
+colorectal cancer (CRC)	Uniprot	colorectal cancer	9256		colorectal cancer			 colorectal cancer crc uniprot colorectal cancer colorectal cancer	digestive	﻿colorectal	carcinoma		
+Chronic myelogenous leukemia (CML)	Uniprot	Chronic myelogenous leukemia	8552		chronic myeloid leukemia	CML		 cml chronic myelogenous leukemia cml uniprot chronic myelogenous leukemia chronic myeloid leukemia	hematopoeitic	blood	leukemia	myelogenous	
+sophageal cancer (ESCR)	Uniprot	esophageal cancer	5041	C15.3|C15.4|C15.5	esophageal cancer		c153 c154 c155	c153 c154 c155 sophageal cancer escr uniprot esophageal cancer esophageal cancer	digestive	esophagus			
+Meningiomas	Uniprot	Meningiomas	NA					 meningiomas uniprot meningiomas 	nervous	meninges	meningioma		
+Familial adenomatous polyposis 2 (FAP2)	Uniprot	Familial adenomatous polyposis 2	80410		familial adenomatous polyposis 2			 familial adenomatous polyposis 2 fap2 uniprot familial adenomatous polyposis 2 familial adenomatous polyposis 2					
+Ovarian tumors	Uniprot	Ovarian tumors	NA					 ovarian tumors uniprot ovarian tumors 					
+Non small cell lung carcinomas (NSCLC)	Uniprot	non-small cell lung carcinoma	3908		lung non-small cell carcinoma			 non small cell lung carcinomas nsclc uniprot non small cell lung carcinoma lung non small cell carcinoma	respiratory	lung	carcinoma	non-small cell	
+Fanconi anemia complementation group N (FANCN)	Uniprot	Fanconi anemia complementation group N	111094		Fanconi anemia complementation group N			 fanconi anemia complementation group n fancn uniprot fanconi anemia complementation group n fanconi anemia complementation group n					
+Pancreatic cancer 3 (PNCA3)	Uniprot	Pancreatic cancer 3	NA					 pancreatic cancer 3 pnca3 uniprot pancreatic cancer 3 	digestive	pancreas			
+Myofibromatosis infantile 1 (IMF1)	Uniprot	Myofibromatosis infantile 1	NA					 myofibromatosis infantile 1 imf1 uniprot myofibromatosis infantile 1 					
+Hereditary non-polyposis colorectal cancer 4 (HNPCC4)	Uniprot	Hereditary non-polyposis colorectal cancer 4	NA					 hereditary non polyposis colorectal cancer 4 hnpcc4 uniprot hereditary non polyposis colorectal cancer 4 					
+Noonan syndrome 5 (NS5)	Uniprot	Noonan syndrome 5	60583	Q87.1	Noonan syndrome 5		q871	q871 noonan syndrome 5 ns5 uniprot noonan syndrome 5 noonan syndrome 5					
+Cancer alopecia pigment dyscrasia onychodystrophy and keratoderma (CAPOK)	Uniprot	Cancer alopecia pigment dyscrasia onychodystrophy and keratoderma	NA					 cancer alopecia pigment dyscrasia onychodystrophy and keratoderma capok uniprot cancer alopecia pigment dyscrasia onychodystrophy and keratoderma 					
+Myopathy congenital with fiber-type disproportion (CFTD)	Uniprot	Myopathy congenital with fiber-type disproportion	NA					 myopathy congenital with fiber type disproportion cftd uniprot myopathy congenital with fiber type disproportion 					
+Cap myopathy 1 (CAPM1)	Uniprot	Cap myopathy 1	NA					 cap myopathy 1 capm1 uniprot cap myopathy 1 					
+Mulibrey nanism (MUL)	Uniprot	Mulibrey nanism	50436		mulibrey nanism			 mulibrey nanism mul uniprot mulibrey nanism mulibrey nanism					
+Colorectal cancer	DrugBank	Colorectal cancer	9256		colorectal cancer			 colorectal cancer drugbank colorectal cancer colorectal cancer					
+diffuse large B-cell lymphoma	DrugBank	diffuse large B-cell lymphoma	50745		diffuse large B-cell lymphoma	DLBCL		 dlbcl diffuse large b cell lymphoma drugbank diffuse large b cell lymphoma diffuse large b cell lymphoma	hematopoeitic		lymphoma	b-cell	large
+follicular lymphoma	DrugBank	follicular lymphoma	50873		follicular lymphoma	FL		 fl follicular lymphoma drugbank follicular lymphoma follicular lymphoma	hematopoeitic		lymphoma	follicular	
+Testicular cancer	DrugBank	Testicular cancer	2998		testicular cancer			 testicular cancer drugbank testicular cancer testicular cancer					
+Node-positive breast cancer	DrugBank	Node-positive breast cancer	NA					 node positive breast cancer drugbank node positive breast cancer 	reproductive	breast			
+Polycythemia Vera	CIViC	Polycythemia Vera	8997		polycythemia vera	PV		 pv polycythemia vera civic polycythemia vera polycythemia vera					
+Gastrointestinal Stromal Tumor	CIViC	Gastrointestinal Stromal Tumor	9253		gastrointestinal stromal tumor	GIST		 gist gastrointestinal stromal tumor civic gastrointestinal stromal tumor gastrointestinal stromal tumor	digestive	intestine	gist		
+Cancer	CIViC	Cancer	162		cancer			 cancer civic cancer cancer					
+Acute Myeloid Leukemia	CIViC	Acute Myeloid Leukemia	9119		acute myeloid leukemia	AML		 aml acute myeloid leukemia civic acute myeloid leukemia acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+Melanoma	CIViC	Melanoma	1909		melanoma	MEL		 mel melanoma civic melanoma melanoma	integumentary		melanoma		
+Colorectal Cancer	CIViC	Colorectal Cancer	9256		colorectal cancer			 colorectal cancer civic colorectal cancer colorectal cancer					
+Skin Melanoma	CIViC	Skin Melanoma	8923		skin melanoma			 skin melanoma civic skin melanoma skin melanoma	integumentary	skin	melanoma		
+Lung Non-small Cell Carcinoma	CIViC	Lung Non-small Cell Carcinoma	3908		lung non-small cell carcinoma			 lung non small cell carcinoma civic lung non small cell carcinoma lung non small cell carcinoma	respiratory	lung	carcinoma	non-small cell	
+Systemic Mastocytosis	CIViC	Systemic Mastocytosis	349		systemic mastocytosis	SM		 sm systemic mastocytosis civic systemic mastocytosis systemic mastocytosis	immune		mastocytosis		
+Langerhans-Cell Histiocytosis	CIViC	Langerhans-Cell Histiocytosis	2571	C96.0|C96.5|C96.6	Langerhans-cell histiocytosis		c960 c965 c966	c960 c965 c966 langerhans cell histiocytosis civic langerhans cell histiocytosis langerhans cell histiocytosis	immune		histiocytosis	langerhans	
+Cholangiocarcinoma	CIViC	Cholangiocarcinoma	4947		cholangiocarcinoma	CHOL		 chol cholangiocarcinoma civic cholangiocarcinoma cholangiocarcinoma	digestive	biliary tract	carcinoma	cholangio	
+Inflammatory Myofibroblastic Tumor	CIViC	Inflammatory Myofibroblastic Tumor	50905		inflammatory myofibroblastic tumor	IMT		 imt inflammatory myofibroblastic tumor civic inflammatory myofibroblastic tumor inflammatory myofibroblastic tumor					
+Neuroblastoma	CIViC	Neuroblastoma	769		neuroblastoma	NBL		 nbl neuroblastoma civic neuroblastoma neuroblastoma	nervous	nerves	blastoma	neuro	
+Neuroblastoma	CIViC	Neuroblastoma	769		neuroblastoma	NB		 nb neuroblastoma civic neuroblastoma neuroblastoma					
+Pancreatic Adenocarcinoma	CIViC	Pancreatic Adenocarcinoma	4074		pancreatic adenocarcinoma	PAAD		 paad pancreatic adenocarcinoma civic pancreatic adenocarcinoma pancreatic adenocarcinoma	digestive	pancreas	carcinoma	adeno	
+Acute Promyelocytic Leukemia	CIViC	Acute Promyelocytic Leukemia	60318		acute promyelocytic leukemia	APL		 apl acute promyelocytic leukemia civic acute promyelocytic leukemia acute promyelocytic leukemia	hematopoeitic	blood	leukemia	promyelocytic	
+Leukemia	CIViC	Leukemia	1240		leukemia			 leukemia civic leukemia leukemia	hematopoeitic	blood	leukemia		
+Thyroid Gland Medullary Carcinoma	CIViC	Thyroid Gland Medullary Carcinoma	3973		thyroid gland medullary carcinoma			 thyroid gland medullary carcinoma civic thyroid gland medullary carcinoma thyroid gland medullary carcinoma	endocrine	thyroid gland	carcinoma		
+Thyroid Gland Papillary Carcinoma	CIViC	Thyroid Gland Papillary Carcinoma	3969		thyroid gland papillary carcinoma			 thyroid gland papillary carcinoma civic thyroid gland papillary carcinoma thyroid gland papillary carcinoma	endocrine	thyroid gland	carcinoma		
+Gastrointestinal Neuroendocrine Tumor	CIViC	Gastrointestinal Neuroendocrine Tumor	50626		gastrointestinal neuroendocrine tumor			 gastrointestinal neuroendocrine tumor civic gastrointestinal neuroendocrine tumor gastrointestinal neuroendocrine tumor	digestive	intestine			
+Hairy Cell Leukemia	CIViC	Hairy Cell Leukemia	285		hairy cell leukemia	HCL		 hcl hairy cell leukemia civic hairy cell leukemia hairy cell leukemia	hematopoeitic	blood	leukemia	hairy cell	
+Multiple Myeloma	CIViC	Multiple Myeloma	9538		multiple myeloma	MM		 mm multiple myeloma civic multiple myeloma multiple myeloma	hematopoeitic	bone marrow	myeloma	multiple	
+Ganglioglioma	CIViC	Ganglioglioma	5078		ganglioglioma	GNG		 gng ganglioglioma civic ganglioglioma ganglioglioma	nervous	cns	glioma	angio	
+Ovarian Cystadenocarcinoma	CIViC	Ovarian Cystadenocarcinoma	3605		ovarian cystadenocarcinoma			 ovarian cystadenocarcinoma civic ovarian cystadenocarcinoma ovarian cystadenocarcinoma	digestive	stomach	carcinoma	adeno	
+Ovarian Cancer	CIViC	Ovarian Cancer	2394		ovarian cancer			 ovarian cancer civic ovarian cancer ovarian cancer					
+Anaplastic Thyroid Carcinoma	CIViC	Anaplastic Thyroid Carcinoma	80522		thyroid gland anaplastic carcinoma			 anaplastic thyroid carcinoma civic anaplastic thyroid carcinoma thyroid gland anaplastic carcinoma	endocrine	thyroid gland	carcinoma	promyelocytic	
+Laryngeal Squamous Cell Carcinoma	CIViC	Laryngeal Ssquamous Cell Carcinoma	NA					 laryngeal squamous cell carcinoma civic laryngeal ssquamous cell carcinoma 	respiratory	lip, oral cavity and pharynx	carcinoma		
+Lung Cancer	CIViC	Lung Cancer	1324		lung cancer			 lung cancer civic lung cancer lung cancer	respiratory	lung			
+Bladder Carcinoma	CIViC	Bladder Carcinoma	4007		bladder carcinoma	BLCA		 blca bladder carcinoma civic bladder carcinoma bladder carcinoma	genitourinary	bladder	carcinoma		
+Invasive Bladder Transitional Cell Carcinoma	CIViC	Invasive Bladder Transitional Cell Carcinoma	6477		invasive bladder transitional cell carcinoma			 invasive bladder transitional cell carcinoma civic invasive bladder transitional cell carcinoma invasive bladder transitional cell carcinoma	genitourinary	bladder	carcinoma		
+Glioblastoma Multiforme	CIViC	Glioblastoma Multiforme	3068		glioblastoma multiforme	GBM		 gbm glioblastoma multiforme civic glioblastoma multiforme glioblastoma multiforme	nervous	cns	blastoma	glio	multiforme
+Chronic Myeloid Leukemia	CIViC	Chronic Myeloid Leukemia	8552		chronic myeloid leukemia			 chronic myeloid leukemia civic chronic myeloid leukemia chronic myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+Mantle Cell Lymphoma	CIViC	Mantle Cell Lymphoma	50746		mantle cell lymphoma	MCL		 mcl mantle cell lymphoma civic mantle cell lymphoma mantle cell lymphoma	hematopoeitic		lymphoma	mantle cell	
+Intrahepatic Cholangiocarcinoma	CIViC	Intrahepatic Cholangiocarcinoma	4928		intrahepatic cholangiocarcinoma	IHCH		 ihch intrahepatic cholangiocarcinoma civic intrahepatic cholangiocarcinoma intrahepatic cholangiocarcinoma	digestive	biliary tract	carcinoma	cholangio	
+Brain Glioma	CIViC	Brain Glioma	60108		brain glioma			 brain glioma civic brain glioma brain glioma	nervous	cns	glioma		
+Malignant Glioma	CIViC	Malignant Glioma	3070		malignant glioma			 malignant glioma civic malignant glioma malignant glioma	nervous	cns	glioma		
+Pancreatic Carcinoma	CIViC	Pancreatic Carcinoma	4905		pancreatic carcinoma			 pancreatic carcinoma civic pancreatic carcinoma pancreatic carcinoma	digestive	pancreas	carcinoma		
+Lung Adenocarcinoma	CIViC	Lung Adenocarcinoma	3910		lung adenocarcinoma	LUAD		 luad lung adenocarcinoma civic lung adenocarcinoma lung adenocarcinoma	respiratory	lung	carcinoma	adeno	
+Breast Cancer	CIViC	Breast Cancer	1612		breast cancer			 breast cancer civic breast cancer breast cancer	reproductive	breast			
+Colon Cancer	CIViC	Colon Cancer	219		colon cancer			 colon cancer civic colon cancer colon cancer	digestive	﻿colorectal			
+Pancreatic Cancer	CIViC	Pancreatic Cancer	1793		pancreatic cancer			 pancreatic cancer civic pancreatic cancer pancreatic cancer	digestive	pancreas			
+Head And Neck Squamous Cell Carcinoma	CIViC	Head And Neck Ssquamous Cell Carcinoma	NA					 head and neck squamous cell carcinoma civic head and neck ssquamous cell carcinoma 			carcinoma		
+Thyroid Cancer	CIViC	thyroid gland cancer	1781	C73	thyroid gland cancer		c73	c73 thyroid cancer civic thyroid gland cancer thyroid gland cancer	endocrine	thyroid gland			
+Lung Acinar Adenocarcinoma	CIViC	Lung Acinar Adenocarcinoma	6482		lung acinar adenocarcinoma			 lung acinar adenocarcinoma civic lung acinar adenocarcinoma lung acinar adenocarcinoma	respiratory	lung	carcinoma		
+T-cell Leukemia	CIViC	T-cell Leukemia	715		T-cell lymphocytic leukemia			 t cell leukemia civic t cell leukemia t cell lymphocytic leukemia	hematopoeitic	blood	leukemia		
+Estrogen-receptor Positive Breast Cancer	CIViC	Estrogen-receptor Positive Breast Cancer	60075		estrogen-receptor positive breast cancer			 estrogen receptor positive breast cancer civic estrogen receptor positive breast cancer estrogen receptor positive breast cancer	reproductive	breast			
+Malignant Anus Melanoma	CIViC	Malignant Anus Melanoma	14145		malignant anus melanoma			 malignant anus melanoma civic malignant anus melanoma malignant anus melanoma	integumentary	anus	melanoma		
+Head And Neck Cancer	CIViC	Head And Neck Cancer	11934		head and neck cancer			 head and neck cancer civic head and neck cancer head and neck cancer					
+Her2-receptor Positive Breast Cancer	CIViC	Her2-receptor Positive Breast Cancer	60079		Her2-receptor positive breast cancer			 her2 receptor positive breast cancer civic her2 receptor positive breast cancer her2 receptor positive breast cancer	reproductive	breast			
+Stomach Carcinoma	CIViC	Stomach Carcinoma	5517		stomach carcinoma			 stomach carcinoma civic stomach carcinoma stomach carcinoma	digestive	stomach	carcinoma		
+Acute Lymphocytic Leukemia	CIViC	Acute Lymphocytic Leukemia	9952		acute lymphocytic leukemia			 acute lymphocytic leukemia civic acute lymphocytic leukemia acute lymphocytic leukemia	hematopoeitic	blood	leukemia		
+Prostate Cancer	CIViC	Prostate Cancer	10283		prostate cancer			 prostate cancer civic prostate cancer prostate cancer	reproductive	prostate			
+Chronic Lymphocytic Leukemia	CIViC	Chronic Lymphocytic Leukemia	1040		chronic lymphocytic leukemia	CLL		 cll chronic lymphocytic leukemia civic chronic lymphocytic leukemia chronic lymphocytic leukemia	hematopoeitic	blood	leukemia	b-cell	
+Colon Carcinoma	CIViC	Colon Carcinoma	1520		colon carcinoma			 colon carcinoma civic colon carcinoma colon carcinoma	digestive	﻿colorectal	carcinoma		
+Prostate Carcinoma	CIViC	Prostate Carcinoma	10286		prostate carcinoma			 prostate carcinoma civic prostate carcinoma prostate carcinoma	reproductive	prostate	carcinoma		
+Hematologic Cancer	CIViC	Hematologic Cancer	2531		hematologic cancer			 hematologic cancer civic hematologic cancer hematologic cancer					
+Esophagus Adenocarcinoma	CIViC	Esophagus Adenocarcinoma	4914		esophagus adenocarcinoma			 esophagus adenocarcinoma civic esophagus adenocarcinoma esophagus adenocarcinoma	digestive	esophagus	carcinoma		
+Cervical Adenocarcinoma	CIViC	Cervical Adenocarcinoma	3702		cervical adenocarcinoma	CEAD		 cead cervical adenocarcinoma civic cervical adenocarcinoma cervical adenocarcinoma	reproductive	cervix	carcinoma	adeno	
+Uveal Melanoma	CIViC	Uveal Melanoma	6039		uveal melanoma	UM		 um uveal melanoma civic uveal melanoma uveal melanoma	visual	eye	melanoma		
+Malignant Mesothelioma	CIViC	Malignant Mesothelioma	1790		malignant mesothelioma			 malignant mesothelioma civic malignant mesothelioma malignant mesothelioma	respiratory	mesothelium	mesothelioma		
+Ovarian Serous Cystadenocarcinoma	CIViC	Ovarian Serous Cystadenocarcinoma	5746		ovarian serous cystadenocarcinoma			 ovarian serous cystadenocarcinoma civic ovarian serous cystadenocarcinoma ovarian serous cystadenocarcinoma	digestive	stomach	carcinoma	adeno	
+Thymic Carcinoma	CIViC	Thymic Carcinoma	3284		thymic carcinoma	THYC		 thyc thymic carcinoma civic thymic carcinoma thymic carcinoma	immune	thymus	carcinoma		
+Epithelial Ovarian Cancer	CIViC	ovary epithelial cancer	2152		ovary epithelial cancer			 epithelial ovarian cancer civic ovary epithelial cancer ovary epithelial cancer	reproductive	ovary			
+Stomach Cancer	CIViC	Stomach Cancer	10534		stomach cancer			 stomach cancer civic stomach cancer stomach cancer	digestive	stomach			
+Endometrial Cancer	CIViC	Endometrial Cancer	1380		endometrial cancer			 endometrial cancer civic endometrial cancer endometrial cancer					
+Sarcoma	CIViC	Sarcoma	1115		sarcoma			 sarcoma civic sarcoma sarcoma			sarcoma		
+Gastric Adenocarcinoma	CIViC	Gastric Adenocarcinoma	3717		gastric adenocarcinoma			 gastric adenocarcinoma civic gastric adenocarcinoma gastric adenocarcinoma	digestive	stomach	carcinoma		
+Uterine Corpus Endometrial Carcinoma	CIViC	Uterine Corpus Endometrial Carcinoma	50939		uterine corpus endometrial carcinoma			 uterine corpus endometrial carcinoma civic uterine corpus endometrial carcinoma uterine corpus endometrial carcinoma	reproductive	uterus	carcinoma		
+Lung Small Cell Carcinoma	CIViC	Lung Small Cell Carcinoma	5409		lung small cell carcinoma			 lung small cell carcinoma civic lung small cell carcinoma lung small cell carcinoma	respiratory	lung	carcinoma	small cell	
+Uterine Corpus Serous Adenocarcinoma	CIViC	Uterine Corpus Serous Adenocarcinoma	5750		uterine corpus serous adenocarcinoma			 uterine corpus serous adenocarcinoma civic uterine corpus serous adenocarcinoma uterine corpus serous adenocarcinoma	reproductive	uterus	carcinoma		
+Scrotum Paget's Disease	CIViC	Scrotum Paget's Disease	3444		scrotum Paget's disease			 scrotum paget s disease civic scrotum paget s disease scrotum paget s disease	reproductive	scrotum			
+Ovarian Serous Carcinoma	CIViC	Ovarian Serous Carcinoma	50933		ovarian serous carcinoma			 ovarian serous carcinoma civic ovarian serous carcinoma ovarian serous carcinoma			carcinoma		
+T-cell Acute Lymphoblastic Leukemia	CIViC	T-cell Acute Lymphoblastic Leukemia	5603	C91.5|C91.50	T-cell acute lymphoblastic leukemia		c915 c9150	c915 c9150 t cell acute lymphoblastic leukemia civic t cell acute lymphoblastic leukemia t cell acute lymphoblastic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+Peritoneal Mesothelioma	CIViC	Peritoneal Mesothelioma	1788		peritoneal mesothelioma	PEMESO		 pemeso peritoneal mesothelioma civic peritoneal mesothelioma peritoneal mesothelioma	respiratory	mesothelium	mesothelioma		
+Ovarian Carcinoma	CIViC	Ovarian Carcinoma	4001		ovarian carcinoma			 ovarian carcinoma civic ovarian carcinoma ovarian carcinoma			carcinoma		
+Lung Squamous Cell Carcinoma	CIViC	Lung Ssquamous Cell Carcinoma	NA					 lung squamous cell carcinoma civic lung ssquamous cell carcinoma 	respiratory	lung	carcinoma		
+Colorectal Adenocarcinoma	CIViC	Colorectal Adenocarcinoma	50861		colorectal adenocarcinoma	COADREAD		 coadread colorectal adenocarcinoma civic colorectal adenocarcinoma colorectal adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+Colorectal Adenocarcinoma	CIViC	Colorectal Adenocarcinoma	50861		colorectal adenocarcinoma	COREAD		 coread colorectal adenocarcinoma civic colorectal adenocarcinoma colorectal adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+Bronchiolo-alveolar Adenocarcinoma	CIViC	Bronchiolo-alveolar Adenocarcinoma	4926		bronchiolo-alveolar adenocarcinoma			 bronchiolo alveolar adenocarcinoma civic bronchiolo alveolar adenocarcinoma bronchiolo alveolar adenocarcinoma	respiratory	lung	carcinoma		
+Skin Squamous Cell Carcinoma	CIViC	Skin Ssquamous Cell Carcinoma	NA					 skin squamous cell carcinoma civic skin ssquamous cell carcinoma 	integumentary	skin	carcinoma		
+Merkel Cell Carcinoma	CIViC	Merkel Cell Carcinoma	3965		Merkel cell carcinoma	MCC		 mcc merkel cell carcinoma civic merkel cell carcinoma merkel cell carcinoma	integumentary	skin	carcinoma	merkel cell	
+Brain Medulloblastoma	CIViC	Brain Medulloblastoma	50902		medulloblastoma	MBL		 mbl brain medulloblastoma civic brain medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+Brain Medulloblastoma	CIViC	Brain Medulloblastoma	50902		medulloblastoma	MB		 mb brain medulloblastoma civic brain medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+Basal Cell Carcinoma	CIViC	Basal Cell Carcinoma	2513		basal cell carcinoma	BCC		 bcc basal cell carcinoma civic basal cell carcinoma basal cell carcinoma	integumentary	skin	carcinoma	basal cell	
+Head And Neck Carcinoma	CIViC	Head And Neck Carcinoma	1542		head and neck carcinoma			 head and neck carcinoma civic head and neck carcinoma head and neck carcinoma			carcinoma		
+Hepatocellular Carcinoma	CIViC	Hepatocellular Carcinoma	684		hepatocellular carcinoma	HCC		 hcc hepatocellular carcinoma civic hepatocellular carcinoma hepatocellular carcinoma	digestive	liver	carcinoma	hepatocellular	
+Anaplastic Large Cell Lymphoma	CIViC	Anaplastic Large Cell Lymphoma	50744		anaplastic large cell lymphoma	ALCL		 alcl anaplastic large cell lymphoma civic anaplastic large cell lymphoma anaplastic large cell lymphoma	hematopoeitic	blood	lymphoma	t-cell	
+Diffuse Large B-cell Lymphoma	CIViC	Diffuse Large B-cell Lymphoma	50745		diffuse large B-cell lymphoma	DLBCL		 dlbcl diffuse large b cell lymphoma civic diffuse large b cell lymphoma diffuse large b cell lymphoma	hematopoeitic		lymphoma	b-cell	large
+Vagina Sarcoma	CIViC	Vagina Sarcoma	1901		vagina sarcoma			 vagina sarcoma civic vagina sarcoma vagina sarcoma	reproductive	vagina	sarcoma		
+Epithelioid Inflammatory Myofibroblastic Sarcoma	CIViC	Epithelioid Inflammatory Myofibroblastic Sarcoma	80372		epithelioid inflammatory myofibroblastic sarcoma			 epithelioid inflammatory myofibroblastic sarcoma civic epithelioid inflammatory myofibroblastic sarcoma epithelioid inflammatory myofibroblastic sarcoma			sarcoma		
+Lung Carcinoma	CIViC	Lung Carcinoma	3905		lung carcinoma			 lung carcinoma civic lung carcinoma lung carcinoma	respiratory	lung	carcinoma		
+Anaplastic Oligodendroglioma	CIViC	Anaplastic Oligodendroglioma	NA			AODG		 aodg anaplastic oligodendroglioma civic anaplastic oligodendroglioma 	nervous	cns	glioma	dendro	oligo
+Waldenström's Macroglobulinemia	CIViC	Waldenstrom Macroglobulinemia	50747	C88.0	lymphoplasmacytic lymphoma	LPL	c880	c880 lpl waldenström s macroglobulinemia civic waldenstrom macroglobulinemia lymphoplasmacytic lymphoma	hematopoeitic	blood	lymphoma	b-cell	
+Renal Carcinoma	CIViC	Renal Carcinoma	4451		renal carcinoma			 renal carcinoma civic renal carcinoma renal carcinoma	genitourinary	kidney	carcinoma		
+Chronic Myeloproliferative Disease	CIViC	Chronic Myeloproliferative Disease	2226	D47.1	myeloproliferative neoplasm	MPN	d471	d471 mpn chronic myeloproliferative disease civic chronic myeloproliferative disease myeloproliferative neoplasm	hematopoeitic				
+Angiosarcoma	CIViC	Angiosarcoma	1816		angiosarcoma	ANGS		 angs angiosarcoma civic angiosarcoma angiosarcoma	reproductive	cervix	sarcoma	angio	
+Thyroid Gland Carcinoma	CIViC	Thyroid Gland Carcinoma	3963		thyroid gland carcinoma			 thyroid gland carcinoma civic thyroid gland carcinoma thyroid gland carcinoma	endocrine	thyroid gland	carcinoma		
+Pancreatic Ductal Adenocarcinoma	CIViC	Pancreatic Ductal Adenocarcinoma	3498		pancreatic ductal adenocarcinoma			 pancreatic ductal adenocarcinoma civic pancreatic ductal adenocarcinoma pancreatic ductal adenocarcinoma	digestive	pancreas	carcinoma		
+Colon Mucinous Adenocarcinoma	CIViC	Colon Mucinous Adenocarcinoma	3029		colon mucinous adenocarcinoma			 colon mucinous adenocarcinoma civic colon mucinous adenocarcinoma colon mucinous adenocarcinoma	digestive	﻿colorectal	carcinoma		
+Renal Cell Carcinoma	CIViC	Renal Cell Carcinoma	4450		renal cell carcinoma	RCC		 rcc renal cell carcinoma civic renal cell carcinoma renal cell carcinoma	genitourinary	kidney	carcinoma	renal cell	
+Ewing Sarcoma Of Bone	CIViC	Ewing Sarcoma Of Bone	3368		Ewing sarcoma of bone			 ewing sarcoma of bone civic ewing sarcoma of bone ewing sarcoma of bone	muscolskeletal	bone	sarcoma		
+B-cell Childhood Acute Lymphoblastic Leukemia	CIViC	B-cell Childhood Acute Lymphoblastic Leukemia	80146		B-cell childhood acute lymphoblastic leukemia			 b cell childhood acute lymphoblastic leukemia civic b cell childhood acute lymphoblastic leukemia b cell childhood acute lymphoblastic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+Endometrial Adenocarcinoma	CIViC	Endometrial Adenocarcinoma	2870		endometrial adenocarcinoma			 endometrial adenocarcinoma civic endometrial adenocarcinoma endometrial adenocarcinoma			carcinoma		
+Clear Cell Renal Cell Carcinoma	CIViC	Clear Cell Renal Cell Carcinoma	4467		clear cell renal cell carcinoma	CCRCC		 ccrcc clear cell renal cell carcinoma civic clear cell renal cell carcinoma clear cell renal cell carcinoma	genitourinary	kidney	carcinoma	clear-cell	
+Liposarcoma	CIViC	Liposarcoma	3382		liposarcoma	LIPO		 lipo liposarcoma civic liposarcoma liposarcoma			sarcoma	lipo	
+Her2-receptor Negative Breast Cancer	CIViC	Her2-receptor Negative Breast Cancer	60080		Her2-receptor negative breast cancer			 her2 receptor negative breast cancer civic her2 receptor negative breast cancer her2 receptor negative breast cancer	reproductive	breast			
+Ewing Sarcoma	CIViC	Ewing Sarcoma	3369		Ewing sarcoma	ES		 es ewing sarcoma civic ewing sarcoma ewing sarcoma			sarcoma		
+Chronic Leukemia	CIViC	Chronic Leukemia	1036		chronic leukemia			 chronic leukemia civic chronic leukemia chronic leukemia	hematopoeitic	blood	leukemia		
+Urothelial Carcinoma	CIViC	Urothelial Carcinoma	NA					 urothelial carcinoma civic urothelial carcinoma 			carcinoma		
+Myeloid And Lymphoid Neoplasms With Eosinophilia And Abnormalities Of PDGFRA	CIViC	Myeloid And Lymphoid Neoplasms With Eosinophilia And Abnormalities Of PDGFRA	NA					 myeloid and lymphoid neoplasms with eosinophilia and abnormalities of pdgfra civic myeloid and lymphoid neoplasms with eosinophilia and abnormalities of pdgfra 	hematopoeitic			myeloid	
+PDGFRB	CIViC	PDGFRB	NA			PDGFRB		 pdgfrb pdgfrb civic pdgfrb 					
+And FGFR1	CIViC	And FGFR1	NA					 and fgfr1 civic and fgfr1 					
+Papillary Adenocarcinoma	CIViC	Papillary Adenocarcinoma	3112		papillary adenocarcinoma			 papillary adenocarcinoma civic papillary adenocarcinoma papillary adenocarcinoma			carcinoma		
+Sezary's Disease	CIViC	Sezary's Disease	8541	C84.1|C84.10	Sezary's disease		c841 c8410	c841 c8410 sezary s disease civic sezary s disease sezary s disease	hematopoeitic	skin	lymphoma	t-cell	
+Adult B-Lymphoblastic Leukemia	CIViC	Adult B-Lymphoblastic Leukemia	60592		B-cell adult acute lymphocytic leukemia			 adult b lymphoblastic leukemia civic adult b lymphoblastic leukemia b cell adult acute lymphocytic leukemia	hematopoeitic	blood	leukemia		
+Colon Adenocarcinoma	CIViC	Colon Adenocarcinoma	234		colon adenocarcinoma	COAD		 coad colon adenocarcinoma civic colon adenocarcinoma colon adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+Rhabdoid Cancer	CIViC	Rhabdoid Cancer	3672		rhabdoid cancer	MRT		 mrt rhabdoid cancer civic rhabdoid cancer rhabdoid cancer				rhabdo	
+Malignant Peripheral Nerve Sheath Tumor	CIViC	Malignant Peripheral Nerve Sheath Tumor	5940		malignant peripheral nerve sheath tumor	MPNST		 mpnst malignant peripheral nerve sheath tumor civic malignant peripheral nerve sheath tumor malignant peripheral nerve sheath tumor	nervous	nerve	sarcoma		
+NUT Midline Carcinoma	CIViC	NUT Midline Carcinoma	60463		NUT midline carcinoma			 nut midline carcinoma civic nut midline carcinoma nut midline carcinoma			carcinoma		
+Salivary Gland Carcinoma	CIViC	Salivary Gland Carcinoma	50904		salivary gland carcinoma			 salivary gland carcinoma civic salivary gland carcinoma salivary gland carcinoma	exocrine	﻿salivary gland	carcinoma		
+Breast Secretory Carcinoma	CIViC	Breast Secretory Carcinoma	4922		breast secretory carcinoma			 breast secretory carcinoma civic breast secretory carcinoma breast secretory carcinoma	reproductive	breast	carcinoma		
+Pediatric B-lymphoblastic Leukemia	CIViC	Pediatric B-lymphoblastic Leukemia	NA					 pediatric b lymphoblastic leukemia civic pediatric b lymphoblastic leukemia 	hematopoeitic	blood	leukemia		
+Mucosal Melanoma	CIViC	Mucosal Melanoma	50929		mucosal melanoma			 mucosal melanoma civic mucosal melanoma mucosal melanoma	integumentary		melanoma		
+Ovarian Clear Cell Carcinoma	CIViC	Ovarian Clear Cell Carcinoma	50934		ovarian clear cell carcinoma			 ovarian clear cell carcinoma civic ovarian clear cell carcinoma ovarian clear cell carcinoma			carcinoma		
+Follicular Thyroid Carcinoma	CIViC	Follicular Thyroid Carcinoma	3962		thyroid gland follicular carcinoma			 follicular thyroid carcinoma civic follicular thyroid carcinoma thyroid gland follicular carcinoma	endocrine	thyroid gland	carcinoma		
+Ureter Small Cell Carcinoma	CIViC	Ureter Small Cell Carcinoma	6886		ureter small cell carcinoma			 ureter small cell carcinoma civic ureter small cell carcinoma ureter small cell carcinoma	genitourinary	ureter	carcinoma	small cell	
+Chronic Neutrophilic Leukemia	CIViC	Chronic Neutrophilic Leukemia	80187		chronic neutrophilic leukemia	CNL		 cnl chronic neutrophilic leukemia civic chronic neutrophilic leukemia chronic neutrophilic leukemia	hematopoeitic	blood	leukemia	neutrophilic	
+Congenital Fibrosarcoma	CIViC	Congenital Fibrosarcoma	8418		congenital fibrosarcoma			 congenital fibrosarcoma civic congenital fibrosarcoma congenital fibrosarcoma			sarcoma		
+Pediatric B-cell Acute Lymphoblastic Leukemia	CIViC	B-cell childhood acute lymphoblastic leukemia	80146		B-cell childhood acute lymphoblastic leukemia			 pediatric b cell acute lymphoblastic leukemia civic b cell childhood acute lymphoblastic leukemia b cell childhood acute lymphoblastic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+Cutaneous melanoma	CGI	Cutaneous melanoma	8923	C43|C43.9	skin melanoma	SKCM	c43 c439	c43 c439 skcm cutaneous melanoma cgi cutaneous melanoma skin melanoma	integumentary	skin	melanoma		
+Cutaneous melanoma	CGI	Cutaneous melanoma	8923	C43|C43.9	skin melanoma	CM	c43 c439	c43 c439 cm cutaneous melanoma cgi cutaneous melanoma skin melanoma	integumentary	skin	melanoma		
+Any cancer type	CGI	Any cancer type	NA					 any cancer type cgi any cancer type 					
+Chronic myeloid leukemia	CGI	Chronic myeloid leukemia	8552		chronic myeloid leukemia			 chronic myeloid leukemia cgi chronic myeloid leukemia chronic myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+Colorectal adenocarcinoma	CGI	Colorectal adenocarcinoma	50861		colorectal adenocarcinoma	COADREAD		 coadread colorectal adenocarcinoma cgi colorectal adenocarcinoma colorectal adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+Colorectal adenocarcinoma	CGI	Colorectal adenocarcinoma	50861		colorectal adenocarcinoma	COREAD		 coread colorectal adenocarcinoma cgi colorectal adenocarcinoma colorectal adenocarcinoma	digestive	﻿colorectal	carcinoma	adeno	
+Acute lymphoblastic leukemia	CGI	Acute lymphoblastic leukemia	9952	C91.0|C91.00	acute lymphocytic leukemia	ALL	c910 c9100	c910 c9100 all acute lymphoblastic leukemia cgi acute lymphoblastic leukemia acute lymphocytic leukemia	hematopoeitic	blood	leukemia	blastic	lympho
+Lung adenocarcinoma	CGI	Lung adenocarcinoma	3910		lung adenocarcinoma	LUAD		 luad lung adenocarcinoma cgi lung adenocarcinoma lung adenocarcinoma	respiratory	lung	carcinoma	adeno	
+Head an neck squamous	CGI	Head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSC		 hnsc head an neck squamous cgi head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+Head an neck squamous	CGI	Head and neck squamous cell carcinoma	5520		head and neck squamous cell carcinoma	HNSCC		 hnscc head an neck squamous cgi head and neck squamous cell carcinoma head and neck squamous cell carcinoma		head and neck	carcinoma	squamous cell	
+Fibrous histiocytoma	CGI	Fibrous histiocytoma	4415		fibrous histiocytoma			 fibrous histiocytoma cgi fibrous histiocytoma fibrous histiocytoma					
+Endometrium	CGI	Endometrium	NA					 endometrium cgi endometrium 	reproductive	uterus			
+Glioma	CGI	Glioma	NA					 glioma cgi glioma 	nervous	cns	glioma		
+Lung	CGI	Lung	NA			LUNG		 lung lung cgi lung 	respiratory	lung			
+Non-small cell lung	CGI	lung non-small cell carcinoma	3908		lung non-small cell carcinoma			 non small cell lung cgi lung non small cell carcinoma lung non small cell carcinoma	respiratory	lung	carcinoma	non-small cell	
+Acute myeloid leukemia	CGI	Acute myeloid leukemia	9119		acute myeloid leukemia	AML		 aml acute myeloid leukemia cgi acute myeloid leukemia acute myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+Ovary	CGI	Ovary	NA					 ovary cgi ovary 	reproductive	ovary			
+Myeloma	CGI	Myeloma	70004		myeloid neoplasm	MNM		 mnm myeloma cgi myeloma myeloid neoplasm	hematopoeitic	bone marrow	myeloma	myeloid	
+Lymphoma	CGI	Lymphoma	60058		lymphoma			 lymphoma cgi lymphoma lymphoma	hematopoeitic		lymphoma		
+Stomach	CGI	Stomach	NA					 stomach cgi stomach 	digestive	stomach			
+Bladder	CGI	Bladder	NA					 bladder cgi bladder 	genitourinary	bladder			
+Prostate adenocarcinoma	CGI	Prostate adenocarcinoma	2526		prostate adenocarcinoma	PRAD		 prad prostate adenocarcinoma cgi prostate adenocarcinoma prostate adenocarcinoma	reproductive	prostate	carcinoma	adeno	
+Mesothelioma	CGI	Mesothelioma	NA					 mesothelioma cgi mesothelioma 	respiratory	mesothelium	mesothelioma		
+Renal	CGI	Renal	NA					 renal cgi renal 	genitourinary	kidney			
+Thyroid	CGI	Thyroid	NA			THYROID		 thyroid thyroid cgi thyroid 	endocrine	thyroid gland			
+Pancreas	CGI	Pancreas	NA			PANCREAS		 pancreas pancreas cgi pancreas 	digestive	pancreas			
+Billiary tract	CGI	Billiary tract	NA					 billiary tract cgi billiary tract 					
+Gastrointestinal stromal	CGI	gastrointestinal stromal tumor	9253	C49.A	gastrointestinal stromal tumor	GIST	c49a	c49a gist gastrointestinal stromal cgi gastrointestinal stromal tumor gastrointestinal stromal tumor	digestive	intestine	gist		
+Neuroendocrine	CGI	Neuroendocrine	NA					 neuroendocrine cgi neuroendocrine 	endocrine				
+Malignant astrocytoma	CGI	Malignant astrocytoma	NA					 malignant astrocytoma cgi malignant astrocytoma 					
+Pediatric glioma	CGI	Pediatric glioma	NA					 pediatric glioma cgi pediatric glioma 	nervous	cns	glioma		
+Hairy-Cell leukemia	CGI	Hairy Cell leukemia	285		hairy cell leukemia	HCL		 hcl hairy cell leukemia cgi hairy cell leukemia hairy cell leukemia	hematopoeitic	blood	leukemia	hairy cell	
+Thyroid carcinoma	CGI	thyroid gland carcinoma	3963		thyroid gland carcinoma			 thyroid carcinoma cgi thyroid gland carcinoma thyroid gland carcinoma	endocrine	thyroid gland	carcinoma		
+Lagerhans cell histiocytosis	CGI	Langerhans-cell histiocytosis	2571	C96.0|C96.5|C96.6	Langerhans-cell histiocytosis		c960 c965 c966	c960 c965 c966 lagerhans cell histiocytosis cgi langerhans cell histiocytosis langerhans cell histiocytosis	immune		histiocytosis	langerhans	
+Erdheim-Chester histiocytosis	CGI	Erdheim-Chester histiocytosis	NA					 erdheim chester histiocytosis cgi erdheim chester histiocytosis 	immune		histiocytosis		
+Breast adenocarcinoma	CGI	Breast adenocarcinoma	3458		breast adenocarcinoma			 breast adenocarcinoma cgi breast adenocarcinoma breast adenocarcinoma	reproductive	breast	carcinoma		
+Myelodisplasic proliferative syndrome	CGI	Myelodisplasic proliferative syndrome	NA					 myelodisplasic proliferative syndrome cgi myelodisplasic proliferative syndrome 					
+Liposarcoma	CGI	Liposarcoma	3382		liposarcoma	LIPO		 lipo liposarcoma cgi liposarcoma liposarcoma			sarcoma	lipo	
+Atypical chronic myeloid leukemia	CGI	Atypical chronic myeloid leukemia	60597		atypical chronic myeloid leukemia			 atypical chronic myeloid leukemia cgi atypical chronic myeloid leukemia atypical chronic myeloid leukemia	hematopoeitic	blood	leukemia	myeloid	
+Lung squamous cell	CGI	lung squamous cell carcinoma	3907		lung squamous cell carcinoma	LUSC		 lusc lung squamous cell cgi lung squamous cell carcinoma lung squamous cell carcinoma	respiratory	lung	carcinoma	squamous cell	
+Neuroblastoma	CGI	Neuroblastoma	769		neuroblastoma	NBL		 nbl neuroblastoma cgi neuroblastoma neuroblastoma	nervous	nerves	blastoma	neuro	
+Neuroblastoma	CGI	Neuroblastoma	769		neuroblastoma	NB		 nb neuroblastoma cgi neuroblastoma neuroblastoma					
+Head an neck	CGI	Head and neck cancer	11934		head and neck cancer			 head an neck cgi head and neck cancer head and neck cancer					
+Glioblastoma	CGI	Glioblastoma	NA			GB		 gb glioblastoma cgi glioblastoma 					
+Rhabdomyosarcoma	CGI	Rhabdomyosarcoma	3247		rhabdomyosarcoma	RMS		 rms rhabdomyosarcoma cgi rhabdomyosarcoma rhabdomyosarcoma			sarcoma	myo	rhabdo
+Plexiform neurofibroma	CGI	Plexiform neurofibroma	5151		plexiform neurofibroma			 plexiform neurofibroma cgi plexiform neurofibroma plexiform neurofibroma	nervous	cns	fibroma	neuro	
+Cervix squamous cell	CGI	Cervix squamous cell	NA					 cervix squamous cell cgi cervix squamous cell 	reproductive	cervix			
+Cervix	CGI	Cervix	NA			CERVIX		 cervix cervix cgi cervix 	reproductive	cervix			
+Cholangiocarcinoma	CGI	Cholangiocarcinoma	4947		cholangiocarcinoma	CHOL		 chol cholangiocarcinoma cgi cholangiocarcinoma cholangiocarcinoma	digestive	biliary tract	carcinoma	cholangio	
+Hematologic malignancies	CGI	Hematologic malignancies	NA					 hematologic malignancies cgi hematologic malignancies 					
+Myelofibrosis	CGI	Myelofibrosis	4971		myelofibrosis			 myelofibrosis cgi myelofibrosis myelofibrosis					
+Megakaryoblastic leukemia	CGI	Megakaryoblastic leukemia	NA					 megakaryoblastic leukemia cgi megakaryoblastic leukemia 	hematopoeitic	blood	leukemia		
+Adrenal adenoma	CGI	Adrenal adenoma	656		adrenal adenoma			 adrenal adenoma cgi adrenal adenoma adrenal adenoma	endocrine	adrenal			
+Systemic mastocytosis	CGI	Systemic mastocytosis	349		systemic mastocytosis	SM		 sm systemic mastocytosis cgi systemic mastocytosis systemic mastocytosis	immune		mastocytosis		
+Thymic	CGI	Thymic	NA					 thymic cgi thymic 	immune	thymus			
+Female germ cell tumor	CGI	Female germ cell tumor	NA					 female germ cell tumor cgi female germ cell tumor 					
+Male germ cell tumor	CGI	Male germ cell tumor	NA					 male germ cell tumor cgi male germ cell tumor 					
+Schwannoma	CGI	Schwannoma	3192		neurilemmoma	SCHW		 schw schwannoma cgi schwannoma neurilemmoma	nervous	nerve	schwannoma		
+Malignant peripheral nerve sheat tumor	CGI	Malignant peripheral nerve sheath tumor	5940		malignant peripheral nerve sheath tumor	MPNST		 mpnst malignant peripheral nerve sheat tumor cgi malignant peripheral nerve sheath tumor malignant peripheral nerve sheath tumor	nervous	nerve	sarcoma		
+Mantle cell lymphoma	CGI	Mantle cell lymphoma	50746		mantle cell lymphoma	MCL		 mcl mantle cell lymphoma cgi mantle cell lymphoma mantle cell lymphoma	hematopoeitic		lymphoma	mantle cell	
+Chronic lymphocytic leukemia	CGI	Chronic lymphocytic leukemia	1040		chronic lymphocytic leukemia	CLL		 cll chronic lymphocytic leukemia cgi chronic lymphocytic leukemia chronic lymphocytic leukemia	hematopoeitic	blood	leukemia	b-cell	
+Myelodisplasic syndrome	CGI	Myelodisplasic syndrome	NA					 myelodisplasic syndrome cgi myelodisplasic syndrome 					
+Hyper eosinophilic advanced snydrome	CGI	Hyper eosinophilic advanced snydrome	NA					 hyper eosinophilic advanced snydrome cgi hyper eosinophilic advanced snydrome 					
+Eosinophilic chronic leukemia	CGI	Eosinophilic chronic leukemia	80367		chronic eosinophilic leukemia			 eosinophilic chronic leukemia cgi eosinophilic chronic leukemia chronic eosinophilic leukemia	hematopoeitic	blood	leukemia		
+Angiosarcoma	CGI	Angiosarcoma	1816		angiosarcoma	ANGS		 angs angiosarcoma cgi angiosarcoma angiosarcoma	reproductive	cervix	sarcoma	angio	
+Anaplastic oligodendroglioma	CGI	Anaplastic oligodendroglioma	NA			AODG		 aodg anaplastic oligodendroglioma cgi anaplastic oligodendroglioma 	nervous	cns	glioma	dendro	oligo
+Waldenström macroglobulinemia	CGI	Waldenstrom macroglobulinemia	50747	C88.0	lymphoplasmacytic lymphoma	LPL	c880	c880 lpl waldenström macroglobulinemia cgi waldenstrom macroglobulinemia lymphoplasmacytic lymphoma	hematopoeitic	blood	lymphoma	b-cell	
+Leukemia	CGI	Leukemia	1240		leukemia			 leukemia cgi leukemia leukemia	hematopoeitic	blood	leukemia		
+Salivary glands	CGI	Salivary glands	NA					 salivary glands cgi salivary glands 	exocrine	﻿salivary gland			
+Neurofibroma	CGI	Neurofibroma	962		neurofibroma	NFIB		 nfib neurofibroma cgi neurofibroma neurofibroma	nervous	cns	fibroma	neuro	
+Hepatic carcinoma	CGI	Hepatic carcinoma	NA					 hepatic carcinoma cgi hepatic carcinoma 	digestive	liver	carcinoma		
+Meningioma	CGI	Meningioma	3565		meningioma	MNG		 mng meningioma cgi meningioma meningioma	nervous	meninges	meningioma		
+Adenoid cystic carcinoma	CGI	Adenoid cystic carcinoma	80202		adenoid cystic carcinoma	ACYC		 acyc adenoid cystic carcinoma cgi adenoid cystic carcinoma adenoid cystic carcinoma			carcinoma	adeno	cyst
+Solid tumors	CGI	Solid tumors	NA					 solid tumors cgi solid tumors 					
+Medulloblastoma	CGI	Medulloblastoma	50902		medulloblastoma	MBL		 mbl medulloblastoma cgi medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+Medulloblastoma	CGI	Medulloblastoma	50902		medulloblastoma	MB		 mb medulloblastoma cgi medulloblastoma medulloblastoma	nervous	cns	blastoma	medullo	
+Basal cell carcinoma	CGI	Basal cell carcinoma	2513		basal cell carcinoma	BCC		 bcc basal cell carcinoma cgi basal cell carcinoma basal cell carcinoma	integumentary	skin	carcinoma	basal cell	
+Sarcoma	CGI	Sarcoma	1115		sarcoma			 sarcoma cgi sarcoma sarcoma			sarcoma		
+Osteosarcoma	CGI	Osteosarcoma	3347		osteosarcoma	OS		 os osteosarcoma cgi osteosarcoma osteosarcoma	muscolskeletal	bone	sarcoma	osteo	
+Retinoblastoma	CGI	Retinoblastoma	768		retinoblastoma	RBL		 rbl retinoblastoma cgi retinoblastoma retinoblastoma	visual	eye	blastoma	retino	
+Malignant rhabdoid tumor	CGI	rhabdoid cancer	3672		rhabdoid cancer	MRT		 mrt malignant rhabdoid tumor cgi rhabdoid cancer rhabdoid cancer				rhabdo	
+Glioblastoma multiforme	CGI	Glioblastoma multiforme	3068		glioblastoma multiforme	GBM		 gbm glioblastoma multiforme cgi glioblastoma multiforme glioblastoma multiforme	nervous	cns	blastoma	glio	multiforme
+B cell lymphoma	CGI	B-cell lymphoma	707		B-cell lymphoma			 b cell lymphoma cgi b cell lymphoma b cell lymphoma	hematopoeitic		lymphoma		
+Renal angiomyolipoma	CGI	Renal angiomyolipoma	8411		kidney angiomyolipoma	RAML		 raml renal angiomyolipoma cgi renal angiomyolipoma kidney angiomyolipoma	genitourinary	kidney	lipoma	myo	angio
+Giant cell astrocytoma	CGI	Giant cell astrocytoma	NA					 giant cell astrocytoma cgi giant cell astrocytoma 					
+Lymphangioleiomyomatosis	CGI	Lymphangioleiomyomatosis	3319		lymphangioleiomyomatosis			 lymphangioleiomyomatosis cgi lymphangioleiomyomatosis lymphangioleiomyomatosis			myoma	leio	
+Inflammatory myofibroblastic	CGI	Inflammatory myofibroblastic	NA					 inflammatory myofibroblastic cgi inflammatory myofibroblastic 					
+Multiple myeloma	CGI	Multiple myeloma	9538		multiple myeloma	MM		 mm multiple myeloma cgi multiple myeloma multiple myeloma	hematopoeitic	bone marrow	myeloma	multiple	
+NUT midline carcinoma	CGI	NUT midline carcinoma	60463		NUT midline carcinoma			 nut midline carcinoma cgi nut midline carcinoma nut midline carcinoma			carcinoma		
+Gastroesophageal junction adenocarcinoma	CGI	Gastroesophageal junction adenocarcinoma	4944		gastroesophageal junction adenocarcinoma			 gastroesophageal junction adenocarcinoma cgi gastroesophageal junction adenocarcinoma gastroesophageal junction adenocarcinoma	digestive	﻿gastroesophageal junction	carcinoma		
+Urinary tract carcinoma	CGI	Urinary tract carcinoma	NA					 urinary tract carcinoma cgi urinary tract carcinoma 	genitourinary		carcinoma		
+Dermatofibrosarcoma	CGI	dermatofibrosarcoma protuberans	3507		dermatofibrosarcoma protuberans	DFSP		 dfsp dermatofibrosarcoma cgi dermatofibrosarcoma protuberans dermatofibrosarcoma protuberans			sarcoma	fibro	dermato
+Acute promyelocytic leukemia	CGI	Acute promyelocytic leukemia	60318		acute promyelocytic leukemia	APL		 apl acute promyelocytic leukemia cgi acute promyelocytic leukemia acute promyelocytic leukemia	hematopoeitic	blood	leukemia	promyelocytic	
+Pancreas adenocarcinoma	CGI	Pancreas adenocarcinoma	4074		pancreatic adenocarcinoma	PAAD		 paad pancreas adenocarcinoma cgi pancreas adenocarcinoma pancreatic adenocarcinoma	digestive	pancreas	carcinoma	adeno	

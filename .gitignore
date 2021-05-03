@@ -3,4 +3,10 @@ work/
 data/
 results/
 .DS_Store
-tests/test_data
+*.pyc
+.nextflow.log*
+._docx*
+._scrape*
+._render*
+docs/._usage.md
+._README.md

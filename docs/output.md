@@ -5,37 +5,41 @@ This document describes the output produced by the pipeline. Most of the plots a
 <!-- TODO nf-core: Write this documentation describing your workflow's output -->
 
 ## Pipeline overview
+
 The pipeline is built using [Nextflow](https://www.nextflow.io/)
 and processes data using the following steps:
 
-* [FastQC](#fastqc) - read quality control
-* [MultiQC](#multiqc) - aggregate report, describing results of the whole pipeline
+* [VEP](#vep) - Variant effect prediction via Ensembl VEP
+* [Report Generation](#report) - Aggregate clinical variant annottion report
 
-## FastQC
-[FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) gives general quality metrics about your reads. It provides information about the quality score distribution across your reads, the per base sequence content (%T/A/G/C). You get information about adapter contamination and other overrepresented sequences.
+## VEP
 
-For further reading and documentation see the [FastQC help](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/).
+[VEP](https://www.ensembl.org/info/docs/tools/vep/script/vep_options.html) is used to annotate raw VCF files. The annotation includes the predicted effects of the mutations on the protein function.
 
-> **NB:** The FastQC plots displayed in the MultiQC report shows _untrimmed_ reads. They may contain adapter sequence and potentially regions with low quality. To see how your reads look after trimming, look at the FastQC reports in the `trim_galore` directory.
+**Output directory: `results`**
 
-**Output directory: `results/fastqc`**
+* `<VCF>.vcf`
+  * Annotated VCF file
 
-* `sample_fastqc.html`
-  * FastQC report, containing quality metrics for your untrimmed raw fastq files
-* `zips/sample_fastqc.zip`
-  * zip file containing the FastQC report, tab-delimited data file and plot images
+## Report Generation
 
+[Report Generation](#report) processes the information found in the annotated VCF file and conducts further annotations including driver gene type and therapeutic suggestions.
+The resulting json report includes 6 main categories:
 
-## MultiQC
-[MultiQC](http://multiqc.info) is a visualisation tool that generates a single HTML report summarising all samples in your project. Most of the pipeline QC results are visualised in the report and further statistics are available in within the report data directory.
+1. "mskdg": Somatic Mutations in Known Driver genes  
+    List of cancer driver genes along with the observed mutations in the patient.
+2. "ptp_da": Summary of Cancer Drugs Targeting the Affected genes  
+    List of cancer drugs targeting the mutated gene.
+3. "ptp_ia": CIViC Summary of Drugs Targeting the Affected genes  
+    Therapies that have evidence of targeting the affected gene
+4. "mskpe": Somatic Mutations with Known Pharmacogenetic Effect
+    List of drugs that directly targets the observed variant of the gene  
+5. "ref": References  
+    The publications as an evidence of the found annotation/information
+6. "appendix": Appendix  
+    All the somatic variants of the patient with their dbSNP and COSMIC IDs.
 
-The pipeline has special steps which allow the software versions used to be reported in the MultiQC output for future traceability.
+**Output directory: `results`**
 
-**Output directory: `results/multiqc`**
-
-* `Project_multiqc_report.html`
-  * MultiQC report - a standalone HTML file that can be viewed in your web browser
-* `Project_multiqc_data/`
-  * Directory containing parsed statistics from the different tools used in the pipeline
-
-For more information about how to use MultiQC reports, see http://multiqc.info
+* `<REPORT>.json`
+  * Clinical report in json format.

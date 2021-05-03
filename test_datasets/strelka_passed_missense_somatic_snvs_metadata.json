@@ -1,0 +1,10 @@
+{
+    "patient_firstname": "ABC",
+    "patient_lastname": "DEF",
+    "patient_dateofbirth": "12.12.1212",
+    "do_name": "skin melanoma",
+    "doid": "8923",
+    "icd10": "C43",
+    "mutation_load": "Medium",
+    "additional_information": "Metastasis"
+}

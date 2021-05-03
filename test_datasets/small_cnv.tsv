@@ -1,0 +1,10 @@
+size	type	copy_number	gene	exons	transcript	chr	start	end	effect
+cluster	amp	29	PIK3R3;RAD54L			chr1	46296170	47227744	NA
+cluster	del	29	SDHA;TERT			chr5	224454	10149714	NA
+cluster	del	29	FAT3			chr11	92507186	93258102	NA
+cluster	amp	29	EGFR			chr7	54719439	55569098	EGFR:activating
+cluster	amp	29	BRAF			chr7	140434279	140624564	BRAF:activating
+cluster	del	29	BAP1			chr3	140434279	140624564	BAP1:activating
+cluster	del	29	NF2			chr22	0	0	NF2:activating
+cluster	amp	29	HGF			chr22	0	0	HGF:activating
+cluster	amp	29	ERBB2			chr22	0	0	ERBB2:activating
